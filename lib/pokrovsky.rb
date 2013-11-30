@@ -24,7 +24,6 @@ class PokrovskyService < Sinatra::Base
         URI.encode(params[:text])
     ]
     full_url = URI.join(ssfaas, text, 'gitfiti')
-
     c         = Curl::Easy.new("%s" % full_url)
     c.headers = {
         'Accept' => 'application/json'
