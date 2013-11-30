@@ -26,7 +26,7 @@ The commits will be structured such that they will 'write' the _:text_ on the Gi
 
 Create a new, disposable Github repo, then try this:
 
-`curl http://potrovsky.herokuapp.com/mygithubname/myrepo/1982 | bash`
+`curl http://pokrovsky.herokuapp.com/mygithubname/myrepo/1982 | bash`
 
 ###Notes
 
