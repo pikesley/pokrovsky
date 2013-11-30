@@ -49,15 +49,17 @@ module Pokrovsky
       s = "" "
 #!/bin/bash
 REPO=%s
+git init %s
 cd %s
 touch README.md
 git add README.md
 " "" % [
           @repo,
+          @repo,
           @repo
       ]
 
-      @days[0, 1].each do |day|
+      @days.each do |day|
         s << day.to_s
       end
 
@@ -73,3 +75,4 @@ git push -u origin master
     end
   end
 end
+
