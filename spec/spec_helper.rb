@@ -1,4 +1,6 @@
 require 'timecop'
+require 'coveralls'
+Coveralls.wear!
 
 require 'pokrovsky'
 require 'pokrovsky/commit'
