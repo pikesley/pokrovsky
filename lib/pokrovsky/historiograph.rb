@@ -2,6 +2,7 @@ require 'json'
 
 module Pokrovsky
   class Historiograph
+    attr_accessor :repo
 
     include Enumerable
 

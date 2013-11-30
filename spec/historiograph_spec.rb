@@ -45,6 +45,7 @@ module Pokrovsky
           ]
         }'
         @h = Historiograph.new @json
+        @h.repo = 'fake-repo-name'
       end
 
       it 'should have length 66' do
@@ -57,6 +58,10 @@ module Pokrovsky
 
       it 'should have its last commit on the 41st Saturday past 1 year ago' do
         @h[65].date.should == '1974-03-30'
+      end
+
+      it 'should have the correct repo name' do
+        @h.repo.should == 'fake-repo-name'
       end
     end
   end
