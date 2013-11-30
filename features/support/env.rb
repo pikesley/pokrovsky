@@ -23,3 +23,7 @@ end
 World do
   PokrovskyServiceWorld.new
 end
+
+at_exit do
+  Timecop.return
+end
