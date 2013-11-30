@@ -5,7 +5,7 @@
 
 #Pokrovsky
 
-##Github History Rewriting as a Service
+##Github History Vandalism as a Service
 
 _v0.0.1_
 
