@@ -9,6 +9,15 @@ require 'rack-google-analytics'
 require 'curb'
 
 class PokrovskyService < Sinatra::Base
+#  use Rack::GoogleAnalytics, :tracker => 'UA-20895204-11'
+
+  get '/' do
+    haml :readme, :locals => {
+        :title => 'Rewriting Git history for fun and profit.',
+        :text  => markdown(File.read('README.md'))
+    }
+  end
+
   get '/:user/:repo/:text' do
     ssfaas   = 'http://uncleclive.herokuapp.com/'
     text = '/%s/' % [
