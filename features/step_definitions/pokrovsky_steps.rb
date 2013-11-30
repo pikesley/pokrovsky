@@ -5,3 +5,4 @@ end
 Then(/^the response should contain this text:$/) do |text|
   page.should have_content(text)
 end
+
