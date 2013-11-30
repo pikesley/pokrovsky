@@ -7,3 +7,7 @@
 ##Github History Rewriting as a Service
 
 _v0.0.1_
+
+##Introduction
+
+The unbroken chain of pointless Things-as-a-Service continues. This one uses my [uncle-clive](http://uncleclive.herokuapp.com) service to generate a script suitable for vandalising your Git commit history ([my account](http://github.com/pikesley) is probably displaying an example right now).
