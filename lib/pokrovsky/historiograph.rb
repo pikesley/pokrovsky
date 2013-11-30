@@ -1,4 +1,3 @@
-require 'pry'
 require 'json'
 
 module Pokrovsky
@@ -7,15 +6,14 @@ module Pokrovsky
     include Enumerable
 
     def initialize json
-      @json = JSON.parse(json)['data']
+      @json  = JSON.parse(json)['data']
       @width = @json[0].length
       populate
     end
 
     def populate
-#      binding.pry
       @days = []
-      date = start_date
+      date  = start_date
       @width.times do |i|
         @json.each do |row|
           if row[i] == 1
@@ -28,7 +26,7 @@ module Pokrovsky
 
     def start_date
       year_ago = Date.parse(Time.new.to_s) - 365
-      offset = ((52 - @width) / 2) * 7
+      offset   = ((52 - @width) / 2) * 7
 
       start_date = year_ago + offset
       while not start_date.sunday?

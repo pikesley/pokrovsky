@@ -34,5 +34,13 @@ module Pokrovsky
     def [] key
       @commits[key]
     end
+
+    def inspect
+      "< %s: date: %s, commits: %d>" % [
+          self.class,
+          @date,
+          @commits
+      ]
+    end
   end
 end

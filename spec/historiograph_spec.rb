@@ -31,7 +31,7 @@ module Pokrovsky
 
     describe 'more realistic situation' do
       before :each do
-        Timecop.freeze Time.local 1975, 06, 15
+        Timecop.freeze Time.local 1974, 06, 15
         @json = '{
           "id": "1982",
           "data": [
@@ -44,6 +44,19 @@ module Pokrovsky
             [0,0,1,1,1,1,1,0,0,0,1,1,1,1,0,0,0,0,1,1,1,1,0,0,0,1,1,1,1,1,1,0]
           ]
         }'
+        @h = Historiograph.new @json
+      end
+
+      it 'should have length 66' do
+        @h.length.should == 66
+      end
+
+      it 'should have its first commit on the 13th Monday past 1 year ago' do
+        @h[0].date.should == '1973-09-11'
+      end
+
+      it 'should have its last commit on the 41st Saturday past 1 year ago' do
+        @h[65].date.should == '1974-03-30'
       end
     end
   end
