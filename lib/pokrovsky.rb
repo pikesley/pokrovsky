@@ -9,7 +9,7 @@ require 'rack-google-analytics'
 require 'curb'
 
 class PokrovskyService < Sinatra::Base
-#  use Rack::GoogleAnalytics, :tracker => 'UA-20895204-11'
+  use Rack::GoogleAnalytics, :tracker => 'UA-20895204-12'
 
   get '/' do
     haml :readme, :locals => {
