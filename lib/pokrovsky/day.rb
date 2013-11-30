@@ -42,5 +42,15 @@ module Pokrovsky
           @commits
       ]
     end
+
+    def to_s
+      s = ''
+      @commits.each do |commit|
+        s << commit.to_s
+        s << "\n"
+      end
+
+      s
+    end
   end
 end
