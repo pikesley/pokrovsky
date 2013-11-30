@@ -1,3 +1,8 @@
 language: ruby
 rvm:
 - 2.0.0
+deploy:
+  provider: heroku
+  app: pokrovsky
+  api_key:
+    secure: MRw5yhSTSGdUgwCGrYU1BkV1vZWmc91XdpMw7Qes6Vnzt/foQpUiNMTeglEGcPjwDnqCaKfZSn6/ikscuLbvKrPV+10Awn7rwEspMRYzCnCnAEBPQmNVdjxwBBGoVSpyEBdMFjUNIPW3hfXmIi6OsxWFdROzB1J7N0lTmwG8ONQ=

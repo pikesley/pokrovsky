@@ -7,13 +7,14 @@ module Pokrovsky
     def initialize date
       @date     = date
       @strength = 4
+      @commits_per_day = 18
 
       populate
     end
 
     def populate
       @commits = []
-      (@strength * 18).times do
+      (@strength * @commits_per_day).times do
         @commits << Pokrovsky::Commit.new(@date)
       end
     end
