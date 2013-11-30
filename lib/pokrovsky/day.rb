@@ -4,9 +4,9 @@ module Pokrovsky
 
     include Enumerable
 
-    def initialize date, strength = 1
+    def initialize date
       @date     = date
-      @strength = strength
+      @strength = 4
 
       populate
     end

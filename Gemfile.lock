@@ -149,6 +149,7 @@ GEM
     thread_safe (0.1.3)
       atomic
     tilt (1.4.1)
+    timecop (0.7.0)
     timers (1.1.0)
     tins (0.13.1)
     travis (1.6.3)
@@ -192,4 +193,5 @@ DEPENDENCIES
   sinatra
   terminal-notifier-guard
   thin
+  timecop
   travis (~> 1.6)
