@@ -7,6 +7,7 @@ require File.join(File.dirname(__FILE__), '..', '..', 'lib/pokrovsky.rb')
 require 'capybara'
 require 'capybara/cucumber'
 require 'rspec'
+require 'timecop'
 
 require 'coveralls'
 Coveralls.wear!
