@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/pikesley/pokrovsky.png?branch=master)](https://travis-ci.org/pikesley/pokrovsky)
 [![Code Climate](https://codeclimate.com/github/pikesley/pokrovsky.png)](https://codeclimate.com/github/pikesley/pokrovsky)
+[![Dependency Status](https://gemnasium.com/pikesley/pokrovsky.png)](https://gemnasium.com/pikesley/pokrovsky)
 [![Coverage Status](https://coveralls.io/repos/pikesley/pokrovsky/badge.png)](https://coveralls.io/r/pikesley/pokrovsky)
 
 #Pokrovsky
