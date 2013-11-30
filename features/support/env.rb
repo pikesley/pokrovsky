@@ -12,14 +12,14 @@ require 'timecop'
 require 'coveralls'
 Coveralls.wear!
 
-Capybara.app = pokrovsky
+Capybara.app = PokrovskyService
 
-class pokrovskyWorld
+class PokrovskyServiceWorld
   include Capybara::DSL
   include RSpec::Expectations
   include RSpec::Matchers
 end
 
 World do
-  pokrovskyWorld.new
+  PokrovskyServiceWorld.new
 end
