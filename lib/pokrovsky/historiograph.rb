@@ -48,7 +48,6 @@ module Pokrovsky
     def to_s
       s = "" "
 #!/bin/bash
-REPO=%s
 git init %s
 cd %s
 touch README.md
