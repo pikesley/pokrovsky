@@ -13,18 +13,18 @@ class PokrovskyService < Sinatra::Base
 
   get '/' do
     haml :readme, :locals => {
-        :title => 'Vandalising Git history for fun and profit.',
-        :text  => markdown(File.read('README.md')),
+        :title           => 'Vandalising Git history for fun and profit.',
+        :text            => markdown(File.read('README.md')),
         :bootstrap_theme => '../lavish-bootstrap.css'
     }
   end
 
   get '/:user/:repo/:text' do
-    ssfaas   = 'http://uncleclive.herokuapp.com/'
-    text = '/%s/' % [
+    ssfaas    = 'http://uncleclive.herokuapp.com/'
+    text      = '/%s/' % [
         URI.encode(params[:text])
     ]
-    full_url = URI.join(ssfaas, text, 'gitfiti')
+    full_url  = URI.join(ssfaas, text, 'gitfiti')
     c         = Curl::Easy.new("%s" % full_url)
     c.headers = {
         'Accept' => 'application/json'
