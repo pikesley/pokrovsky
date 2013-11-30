@@ -68,14 +68,13 @@ module Pokrovsky
       it 'should dump a full git-abuse script' do
         @h.to_s.should match /#!\/bin\/bash/
         @h.to_s.should match /REPO=fake-repo-name/
+        @h.to_s.should match /git init fake-repo-name/
         @h.to_s.should match /cd fake-repo-name/
         @h.to_s.should match /touch README.md/
         @h.to_s.should match /git add README.md/
         @h.to_s.should match /GIT_AUTHOR_DATE=1973-09-11T12:00:00 GIT_COMMITTER_DATE=1973-09-11T12:00:00 git commit --allow-empty -m "Rewriting History!" > \/dev\/null/
-        @h.to_s.should match /GIT_AUTHOR_DATE=1973-09-11T12:00:00 GIT_COMMITTER_DATE=1973-09-11T12:00:00 git commit --allow-empty -m "Rewriting History!" > \/dev\/null/
 
-        @h.to_s.should match /GIT_AUTHOR_DATE=1973-09-11T12:00:00 GIT_COMMITTER_DATE=1973-09-11T12:00:00 git commit --allow-empty -m "Rewriting History!" > \/dev\/null/
-        @h.to_s.should match /GIT_AUTHOR_DATE=1973-09-11T12:00:00 GIT_COMMITTER_DATE=1973-09-11T12:00:00 git commit --allow-empty -m "Rewriting History!" > \/dev\/null/
+        @h.to_s.should match /GIT_AUTHOR_DATE=1974-03-30T12:00:00 GIT_COMMITTER_DATE=1974-03-30T12:00:00 git commit --allow-empty -m "Rewriting History!" > \/dev\/null/
 
         @h.to_s.should match /git remote add origin git@github.com:fake-github-user\/fake-repo-name.git/
         @h.to_s.should match /git pull/
