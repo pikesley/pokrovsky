@@ -13,7 +13,7 @@ class PokrovskyService < Sinatra::Base
 
   get '/' do
     haml :readme, :locals => {
-        :title => 'Rewriting Git history for fun and profit.',
+        :title => 'Vandalising Git history for fun and profit.',
         :text  => markdown(File.read('README.md')),
         :bootstrap_theme => '../lavish-bootstrap.css'
     }
