@@ -2,7 +2,7 @@ require 'json'
 
 module Pokrovsky
   class Historiograph
-    attr_accessor :repo
+    attr_accessor :user, :repo
 
     include Enumerable
 
@@ -43,6 +43,33 @@ module Pokrovsky
 
     def length
       @days.length
+    end
+
+    def to_s
+      s = "" "
+#!/bin/bash
+REPO=%s
+cd %s
+touch README.md
+git add README.md
+" "" % [
+          @repo,
+          @repo
+      ]
+
+      @days[0, 1].each do |day|
+        s << day.to_s
+      end
+
+      s << """
+git remote add origin git@github.com:%s/%s.git
+git pull
+git push -u origin master
+""" % [
+          @user,
+          @repo
+      ]
+      s
     end
   end
 end
