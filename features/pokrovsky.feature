@@ -1,5 +1,11 @@
 Feature: get git abuse script
 
+  Scenario: Get the home page
+    Given I am on "the home page"
+    Then I should see "Pokrovsky"
+    And I should see "Github History Rewriting as a Service"
+    And I should see "Content negotiation"
+
   Scenario: Get script for a single character
     Given the date is "1970-01-01"
     When I go to /someuser/somerepo/a
