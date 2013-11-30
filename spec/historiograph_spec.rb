@@ -67,7 +67,6 @@ module Pokrovsky
 
       it 'should dump a full git-abuse script' do
         @h.to_s.should match /#!\/bin\/bash/
-        @h.to_s.should match /REPO=fake-repo-name/
         @h.to_s.should match /git init fake-repo-name/
         @h.to_s.should match /cd fake-repo-name/
         @h.to_s.should match /touch README.md/
