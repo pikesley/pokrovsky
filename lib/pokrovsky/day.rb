@@ -7,7 +7,7 @@ module Pokrovsky
     def initialize date
       @date     = date
       @strength = 4
-      @commits_per_day = 10
+      @commits_per_day = 18
 
       populate
     end
