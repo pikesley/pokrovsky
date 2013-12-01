@@ -15,7 +15,8 @@ class PokrovskyService < Sinatra::Base
     haml :readme, :locals => {
         :title           => 'Vandalising Git history for fun and profit.',
         :text            => markdown(File.read('README.md')),
-        :bootstrap_theme => '../lavish-bootstrap.css'
+        :bootstrap_theme => '../lavish-bootstrap.css',
+        :github_ribbon   => 'right_gray_6d6d6d'
     }
   end
 
