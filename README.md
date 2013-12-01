@@ -33,4 +33,5 @@ Create a new, disposable Github repo, then try this:
 
 * You should start with a fresh repo each time, both locally and on Github. The script makes no attempt to create a new Github repo, and it certainly doesn't try to delete anything from there. If you can't work out how to do this safely, you probably shouldn't use this service.
 * The calendar is 52 weeks wide. Spectrum characters are 8 units wide. So, you know, 6-character strings.
+* If you decide this isn't for you after all, just delete the repo and it will all go away.
 * This owes a _massive_ debt to [Gelstudios'](https://github.com/gelstudios) splendid [Gitfiti](https://github.com/gelstudios/gitfiti).
