@@ -25,6 +25,8 @@ Will return a bash script which, when run locally, will:
 
 The commits will be structured such that they will 'write' the _:text_ on the Github commit calendar using the 1982 Sinclair Spectrum character set. There is a limitation in that the Spectrum font is 8 units high, and the Github calendar has a height of 7 (see [http://uncleclive.herokuapp.com/#textpokrovsky](http://uncleclive.herokuapp.com/#textpokrovsky) for an explanation of how this is handled).
 
+###Usage example
+
 Create a new, disposable Github repo, then try this:
 
 `curl http://pokrovsky.herokuapp.com/mygithubname/myrepo/1982 | bash`
