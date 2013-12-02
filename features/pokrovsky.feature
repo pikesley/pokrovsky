@@ -8,7 +8,7 @@ Feature: get git abuse script
 
   Scenario: Get script for a single character
     Given the date is "1970-01-01"
-    When I go to /someuser/somerepo/a
+    When I go to "/someuser/somerepo/a"
     Then the response should contain this text:
     """
 #!/bin/bash
@@ -27,4 +27,28 @@ GIT_AUTHOR_DATE=1969-07-19T12:00:00 GIT_COMMITTER_DATE=1969-07-19T12:00:00 git c
 git remote add origin git@github.com:someuser/somerepo.git
 git pull
 git push -u origin master
+    """
+
+  Scenario: handle a space
+    Given the date is "2013-12-02"
+    When I go to "/someuser/somerepo/ROB TS"
+    Then the response should contain this text:
+    """
+GIT_AUTHOR_DATE=2012-12-24
+    """
+    And the response should contain this text:
+    """
+GIT_AUTHOR_DATE=2013-02-22
+    """
+    And the response should contain this text:
+    """
+GIT_AUTHOR_DATE=2013-04-17
+    """
+#    And the response should not contain this text:
+#    """
+#GIT_AUTHOR_DATE=2013-06-17
+#    """
+    And the response should contain this text:
+    """
+GIT_AUTHOR_DATE=2013-09-09
     """

@@ -16,6 +16,9 @@ module NavigationHelpers
       when /someuser\/somerepo\/a/
         '/someuser/somerepo/a'
 
+      when /someuser\/somerepo\/ROB TS/
+        '/someuser/somerepo/ROB%20TS'
+
       # Add more mappings here.
       # Here is an example that pulls values out of the Regexp:
       #
