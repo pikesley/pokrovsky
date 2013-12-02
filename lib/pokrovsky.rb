@@ -11,17 +11,21 @@ require 'curb'
 class PokrovskyService < Sinatra::Base
   use Rack::GoogleAnalytics, :tracker => 'UA-20895204-12'
 
+  @@locals = {
+      :bootstrap_theme => '../lavish-bootstrap.css',
+      :github          => {
+          :user    => 'pikesley',
+          :project => 'pokrovsky',
+          :ribbon  => 'right_gray_6d6d6d'
+      }
+  }
+
   get '/' do
-    haml :readme, :locals => {
-        :title           => 'Vandalising Git history for fun and profit.',
-        :text            => markdown(File.read('README.md')),
-        :github          => {
-            :user    => 'pikesley',
-            :project => 'pokrovsky',
-            :ribbon  => 'right_gray_6d6d6d'
-        },
-        :bootstrap_theme => '../lavish-bootstrap.css'
-    }
+    haml :readme, :locals => @@locals.merge(
+        {
+            :title => 'Vandalising Git history for fun and profit.'
+        }
+    )
   end
 
   get '/:user/:repo/:text' do
