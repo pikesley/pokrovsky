@@ -23,8 +23,7 @@ class PokrovskyService < Sinatra::Base
   get '/' do
     haml :readme, :locals => @@locals.merge(
         {
-            :title => 'Vandalising Git history for fun and profit.',
-            :text  => markdown(File.read('README.md'))
+            :title => 'Vandalising Git history for fun and profit.'
         }
     )
   end
