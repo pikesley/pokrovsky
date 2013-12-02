@@ -13,9 +13,6 @@ class PokrovskyService < Sinatra::Base
 
   @@layout_locals = {
       :bootstrap_theme   => '../lavish-bootstrap.css',
-      :additional_styles => [
-          '../sinclair.css'
-      ],
       :github            => {
           :user    => 'pikesley',
           :project => 'pokrovsky',
