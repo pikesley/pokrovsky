@@ -46,13 +46,12 @@ module Pokrovsky
     end
 
     def to_s
-      s = "" "
-#!/bin/bash
+      s = """#!/bin/bash
 git init %s
 cd %s
 touch README.md
 git add README.md
-" "" % [
+""" % [
           @repo,
           @repo,
           @repo
@@ -62,8 +61,7 @@ git add README.md
         s << day.to_s
       end
 
-      s << """
-git remote add origin git@github.com:%s/%s.git
+      s << """git remote add origin git@github.com:%s/%s.git
 git pull
 git push -u origin master
 """ % [
