@@ -3,6 +3,10 @@
   %head
     %title= title
     %link{:rel => 'stylesheet', :href => '//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css', :type => "text/css"}
+    -if defined? additional_styles
+      -additional_styles.each do |style|
+        %link{:rel => 'stylesheet', :href => style, :type => "text/css"}
+
     -if defined? bootstrap_theme
       %link{:rel => 'stylesheet', :href => bootstrap_theme, :type => "text/css"}
 
