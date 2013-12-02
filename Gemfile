@@ -26,4 +26,5 @@ group :test do
   gem 'terminal-notifier-guard'
   gem 'coveralls', require: false
   gem 'timecop'
+  gem 'vcr'
 end
