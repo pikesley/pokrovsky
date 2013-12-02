@@ -35,7 +35,7 @@ class PokrovskyService < Sinatra::Base
     @h      = Pokrovsky::Historiograph.new c.body
     @h.user = params[:user]
     @h.repo = params[:repo]
-    @h.to_s
+    halt 200, {'Content-Type' => 'text/plain'}, @h.to_s
   end
 
   run! if app_file == $0
