@@ -19,11 +19,13 @@ The unbroken chain of pointless Things-as-a-Service continues. This one uses my 
 
 Will return a bash script which, when run locally, will:
 
-* initialise a new local git repo named _:repo_
+* initialise a local git repo named _:repo_
 * create a series of empty commits
-* push the repo to git@github.com:_:githublogin/:repo_
+* push the repo to **git@github.com:_:githublogin/:repo_.git**
 
 The commits will be structured such that they will 'write' the _:text_ on the Github commit calendar using the 1982 Sinclair Spectrum character set. There is a limitation in that the Spectrum font is 8 units high, and the Github calendar has a height of 7 (see [http://uncleclive.herokuapp.com/#textpokrovsky](http://uncleclive.herokuapp.com/#textpokrovsky) for an explanation of how this is handled).
+
+All of the above assumes that you can do public-key authentication to Github from the box on which you're running this.
 
 ###Usage example
 
