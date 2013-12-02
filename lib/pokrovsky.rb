@@ -15,8 +15,12 @@ class PokrovskyService < Sinatra::Base
     haml :readme, :locals => {
         :title           => 'Vandalising Git history for fun and profit.',
         :text            => markdown(File.read('README.md')),
-        :bootstrap_theme => '../lavish-bootstrap.css',
-        :github_ribbon   => 'right_gray_6d6d6d'
+        :github          => {
+            :user    => 'pikesley',
+            :project => 'pokrovsky',
+            :ribbon  => 'right_gray_6d6d6d'
+        },
+        :bootstrap_theme => '../lavish-bootstrap.css'
     }
   end
 
@@ -35,7 +39,7 @@ class PokrovskyService < Sinatra::Base
     @h      = Pokrovsky::Historiograph.new c.body
     @h.user = params[:user]
     @h.repo = params[:repo]
-    halt 200, {'Content-Type' => 'text/plain'}, @h.to_s
+    halt 200, { 'Content-Type' => 'text/plain' }, @h.to_s
   end
 
   run! if app_file == $0
