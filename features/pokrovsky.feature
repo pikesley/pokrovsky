@@ -44,10 +44,10 @@ GIT_AUTHOR_DATE=2013-02-22
     """
 GIT_AUTHOR_DATE=2013-04-17
     """
-#    And the response should not contain this text:
-#    """
-#GIT_AUTHOR_DATE=2013-06-17
-#    """
+    And the response should not contain this text:
+    """
+GIT_AUTHOR_DATE=2013-06-17
+    """
     And the response should contain this text:
     """
 GIT_AUTHOR_DATE=2013-09-09
