@@ -31,12 +31,10 @@ All of the above assumes that you can do public-key authentication to Github fro
 
 Create a new, disposable Github repo, then try this:
 
-```
-GITHUBUSER=`git config --get user.name`
-DISPOSABLEREPO=dummy
-GRAFFITI=`echo "© 1982" | sed "s: :%20:g"`
-curl "http://pokrovsky.herokuapp.com/${GITHUBUSER}/${DISPOSABLEREPO}/${GRAFFITI}" | bash
-```
+    GITHUBUSER=`git config --get user.name`
+    DISPOSABLEREPO=dummy
+    GRAFFITI=`echo "© 1982" | sed "s: :%20:g"`
+    curl "http://pokrovsky.herokuapp.com/${GITHUBUSER}/${DISPOSABLEREPO}/${GRAFFITI}" | bash
 
 ###Notes
 
