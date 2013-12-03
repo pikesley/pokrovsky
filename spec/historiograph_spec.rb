@@ -80,5 +80,57 @@ module Pokrovsky
         @h.to_s.should match /git push -u origin master/
       end
     end
+
+    describe 'situation with 4s, not 1s' do
+      before :each do
+        Timecop.freeze Time.local 1974, 06, 15
+        @json = '{
+          "id": "1982",
+          "data": [
+            [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+            [0,0,0,4,4,0,0,0,0,0,4,4,4,4,0,0,0,0,4,4,4,4,0,0,0,0,4,4,4,4,0,0],
+            [0,0,4,0,4,0,0,0,0,4,0,0,0,0,4,0,0,4,0,0,0,0,4,0,0,4,0,0,0,0,4,0],
+            [0,0,0,0,4,0,0,0,0,4,0,0,0,0,4,0,0,0,4,4,4,4,0,0,0,0,0,0,0,0,4,0],
+            [0,0,0,0,4,0,0,0,0,0,4,4,4,4,4,0,0,4,0,0,0,0,4,0,0,0,4,4,4,4,0,0],
+            [0,0,0,0,4,0,0,0,0,0,0,0,0,0,4,0,0,4,0,0,0,0,4,0,0,4,0,0,0,0,0,0],
+            [0,0,4,4,4,4,4,0,0,0,4,4,4,4,0,0,0,0,4,4,4,4,0,0,0,4,4,4,4,4,4,0]
+          ]
+        }'
+        @h = Historiograph.new @json
+        @h.user = 'fake-github-user'
+        @h.repo = 'fake-repo-name'
+      end
+
+      it 'should have length 66' do
+        @h.length.should == 66
+      end
+
+      it 'should have its first commit on the 13th Monday past 1 year ago' do
+        @h[0].date.should == '1973-09-11'
+      end
+
+      it 'should have its last commit on the 41st Saturday past 1 year ago' do
+        @h[65].date.should == '1974-03-30'
+      end
+
+      it 'should have the correct repo name' do
+        @h.repo.should == 'fake-repo-name'
+      end
+
+      it 'should dump a full git-abuse script' do
+        @h.to_s.should match /#!\/bin\/bash/
+        @h.to_s.should match /git init fake-repo-name/
+        @h.to_s.should match /cd fake-repo-name/
+        @h.to_s.should match /touch README.md/
+        @h.to_s.should match /git add README.md/
+        @h.to_s.should match /GIT_AUTHOR_DATE=1973-09-11T12:00:00 GIT_COMMITTER_DATE=1973-09-11T12:00:00 git commit --allow-empty -m "Rewriting History!" > \/dev\/null/
+
+        @h.to_s.should match /GIT_AUTHOR_DATE=1974-03-30T12:00:00 GIT_COMMITTER_DATE=1974-03-30T12:00:00 git commit --allow-empty -m "Rewriting History!" > \/dev\/null/
+
+        @h.to_s.should match /git remote add origin git@github.com:fake-github-user\/fake-repo-name.git/
+        @h.to_s.should match /git pull/
+        @h.to_s.should match /git push -u origin master/
+      end
+    end
   end
 end
