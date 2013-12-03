@@ -17,7 +17,7 @@ module Pokrovsky
       date  = start_date
       @width.times do |i|
         @json.each do |row|
-          if row[i] == 1
+          if row[i] != 0
             @days << Pokrovsky::Day.new(date.strftime "%F")
           end
           date += 1
