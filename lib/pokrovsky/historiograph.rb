@@ -61,7 +61,7 @@ module Pokrovsky
       }
       c.perform
 
-      @max_commits = (JSON.parse(c.body).map { |i| i = i[-1] }).max.to_i
+        (JSON.parse(c.body_str).map { |i| i = i[-1] }).max.to_i
     end
 
     def multiplier
