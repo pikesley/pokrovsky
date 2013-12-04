@@ -1,5 +1,7 @@
+require 'spec_helper'
+
 module Pokrovsky
-  describe Historiograph do
+  describe Historiograph,:vcr do
     before :each do
       Timecop.freeze Time.local 1970, 01, 01
       @json = '{
@@ -133,7 +135,7 @@ module Pokrovsky
       end
     end
 
-    describe 'get max commits' do
+    describe 'get max commits'  do
       before :each do
         Timecop.freeze Time.local 2013, 12, 03
         @json   = '{
@@ -152,7 +154,7 @@ module Pokrovsky
         @h.user = 'pikesley'
       end
 
-      it 'should have 112 commits', :vcr do
+      it 'should have 112 commits' do
         @h.max_commits.should == 112
       end
 
