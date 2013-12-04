@@ -27,4 +27,5 @@ group :test do
   gem 'coveralls', require: false
   gem 'timecop'
   gem 'vcr'
+  gem 'webmock'
 end

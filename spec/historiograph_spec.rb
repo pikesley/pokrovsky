@@ -32,7 +32,7 @@ module Pokrovsky
     describe 'more realistic situation' do
       before :each do
         Timecop.freeze Time.local 1974, 06, 15
-        @json = '{
+        @json   = '{
           "id": "1982",
           "data": [
             [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
@@ -44,7 +44,7 @@ module Pokrovsky
             [0,0,1,1,1,1,1,0,0,0,1,1,1,1,0,0,0,0,1,1,1,1,0,0,0,1,1,1,1,1,1,0]
           ]
         }'
-        @h = Historiograph.new @json
+        @h      = Historiograph.new @json
         @h.user = 'fake-github-user'
         @h.repo = 'fake-repo-name'
       end
@@ -84,7 +84,7 @@ module Pokrovsky
     describe 'situation with 4s, not 1s' do
       before :each do
         Timecop.freeze Time.local 1974, 06, 15
-        @json = '{
+        @json   = '{
           "id": "1982",
           "data": [
             [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
@@ -96,7 +96,7 @@ module Pokrovsky
             [0,0,4,4,4,4,4,0,0,0,4,4,4,4,0,0,0,0,4,4,4,4,0,0,0,4,4,4,4,4,4,0]
           ]
         }'
-        @h = Historiograph.new @json
+        @h      = Historiograph.new @json
         @h.user = 'fake-github-user'
         @h.repo = 'fake-repo-name'
       end
@@ -130,6 +130,34 @@ module Pokrovsky
         @h.to_s.should match /git remote add origin git@github.com:fake-github-user\/fake-repo-name.git/
         @h.to_s.should match /git pull/
         @h.to_s.should match /git push -u origin master/
+      end
+    end
+
+    describe 'get max commits' do
+      before :each do
+        Timecop.freeze Time.local 2013, 12, 03
+        @json   = '{
+          "id": "1982",
+          "data": [
+            [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+            [0,0,0,4,4,0,0,0,0,0,4,4,4,4,0,0,0,0,4,4,4,4,0,0,0,0,4,4,4,4,0,0],
+            [0,0,4,0,4,0,0,0,0,4,0,0,0,0,4,0,0,4,0,0,0,0,4,0,0,4,0,0,0,0,4,0],
+            [0,0,0,0,4,0,0,0,0,4,0,0,0,0,4,0,0,0,4,4,4,4,0,0,0,0,0,0,0,0,4,0],
+            [0,0,0,0,4,0,0,0,0,0,4,4,4,4,4,0,0,4,0,0,0,0,4,0,0,0,4,4,4,4,0,0],
+            [0,0,0,0,4,0,0,0,0,0,0,0,0,0,4,0,0,4,0,0,0,0,4,0,0,4,0,0,0,0,0,0],
+            [0,0,4,4,4,4,4,0,0,0,4,4,4,4,0,0,0,0,4,4,4,4,0,0,0,4,4,4,4,4,4,0]
+          ]
+        }'
+        @h      = Historiograph.new @json
+        @h.user = 'pikesley'
+      end
+
+      it 'should have 112 commits' do #, :vcr do
+        @h.max_commits.should == 112
+      end
+
+      it 'should have a multiplier of 28' do
+        @h.multiplier.should == 28
       end
     end
   end
