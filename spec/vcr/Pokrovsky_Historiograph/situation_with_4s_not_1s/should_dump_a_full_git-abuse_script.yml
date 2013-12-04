@@ -17,7 +17,7 @@ http_interactions:
       Server:
       - GitHub.com
       Date:
-      - Wed, 04 Dec 2013 22:24:34 GMT
+      - Wed, 04 Dec 2013 22:37:54 GMT
       Content-Type:
       - application/json; charset=utf-8
       Status:
@@ -29,14 +29,14 @@ http_interactions:
       X-Frame-Options:
       - deny
       Set-Cookie:
-      - logged_in=no; domain=.github.com; path=/; expires=Sun, 04-Dec-2033 22:24:34
+      - logged_in=no; domain=.github.com; path=/; expires=Sun, 04-Dec-2033 22:37:54
         GMT; secure; HttpOnly
       X-Runtime:
       - '1'
       Content-Length:
       - '21'
       X-Github-Request-Id:
-      - 574A4CAB:31F4:24645E8:529FABA2
+      - 574A4CAB:3B1C:17DC0F5:529FAEC2
     body:
       encoding: ASCII-8BIT
       string: '{"error":"Not Found"}'
