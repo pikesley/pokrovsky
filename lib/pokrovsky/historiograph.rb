@@ -2,7 +2,8 @@ require 'json'
 
 module Pokrovsky
   class Historiograph
-    attr_accessor :user, :repo
+    attr_accessor :repo
+    attr_reader :user, :max_commits
 
     include Enumerable
 
@@ -45,13 +46,37 @@ module Pokrovsky
       @days.length
     end
 
+    def user= user
+      @user = user
+      get_max_commits
+    end
+
+    def get_max_commits
+      @max_commits ||= begin
+        url       = 'https://github.com/users/%s/contributions_calendar_data' % [
+            @user
+        ]
+        c         = Curl::Easy.new("%s" % url)
+        c.headers = {
+            'Accept' => 'application/json'
+        }
+        c.perform
+
+        (JSON.parse(c.body_str).map { |i| i = i[-1] }).max.to_i
+      end
+    end
+
+    def multiplier
+      (@max_commits / 4).to_i
+    end
+
     def to_s
-      s = """#!/bin/bash
+      s = "" "#!/bin/bash
 git init %s
 cd %s
 touch README.md
 git add README.md
-""" % [
+" "" % [
           @repo,
           @repo,
           @repo
@@ -61,10 +86,10 @@ git add README.md
         s << day.to_s
       end
 
-      s << """git remote add origin git@github.com:%s/%s.git
+      s << "" "git remote add origin git@github.com:%s/%s.git
 git pull
 git push -u origin master
-""" % [
+" "" % [
           @user,
           @repo
       ]

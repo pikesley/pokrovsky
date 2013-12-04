@@ -14,6 +14,9 @@ task :generate do
   @h = Pokrovsky::Historiograph.new @json
   @h.user = 'pikesley'
   @h.repo = 'testicicle'
-
   puts @h.to_s
+end
+
+task :wipe_cassettes do
+  `rm -fr fixtures/vcr/* spec/vcr/*`
 end

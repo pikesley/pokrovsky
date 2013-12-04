@@ -33,14 +33,14 @@ class PokrovskyService < Sinatra::Base
     text      = '/%s/' % [
         URI.encode(params[:text])
     ]
-    full_url  = URI.join(ssfaas, text, 'gitfiti')
+    full_url  = URI.join(ssfaas, text, 'pokrovsky')
     c         = Curl::Easy.new("%s" % full_url)
     c.headers = {
         'Accept' => 'application/json'
     }
     c.perform
 
-    @h      = Pokrovsky::Historiograph.new c.body
+    @h      = Pokrovsky::Historiograph.new c.body_str
     @h.user = params[:user]
     @h.repo = params[:repo]
     halt 200, { 'Content-Type' => 'text/plain' }, @h.to_s
