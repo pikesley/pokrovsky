@@ -52,16 +52,18 @@ module Pokrovsky
     end
 
     def get_max_commits
-      url       = 'https://github.com/users/%s/contributions_calendar_data' % [
-          @user
-      ]
-      c         = Curl::Easy.new("%s" % url)
-      c.headers = {
-          'Accept' => 'application/json'
-      }
-      c.perform
+      @max_commits ||= begin
+        url       = 'https://github.com/users/%s/contributions_calendar_data' % [
+            @user
+        ]
+        c         = Curl::Easy.new("%s" % url)
+        c.headers = {
+            'Accept' => 'application/json'
+        }
+        c.perform
 
         (JSON.parse(c.body_str).map { |i| i = i[-1] }).max.to_i
+      end
     end
 
     def multiplier
