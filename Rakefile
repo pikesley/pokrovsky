@@ -17,3 +17,7 @@ task :generate do
 
   puts @h.to_s
 end
+
+task :wipe_cassettes do
+  `rm -fr fixtures/vcr/* spec/vcr/*`
+end

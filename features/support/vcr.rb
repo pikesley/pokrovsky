@@ -3,7 +3,7 @@ require 'webmock/cucumber'
 
 VCR.configure do |c|
   c.default_cassette_options = { :record => :once }
-  c.cassette_library_dir = 'fixtures/vcr_cassettes'
+  c.cassette_library_dir = 'fixtures/vcr'
   c.hook_into :webmock
 end
 
