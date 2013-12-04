@@ -171,7 +171,7 @@ GEM
       ethon (~> 0.6.1)
     tzinfo (0.3.38)
     vcr (2.8.0)
-    webmock (1.16.0)
+    webmock (1.15.2)
       addressable (>= 2.2.7)
       crack (>= 0.3.2)
     websocket (1.0.7)
@@ -203,4 +203,4 @@ DEPENDENCIES
   timecop
   travis (~> 1.6)
   vcr
-  webmock
+  webmock (= 1.15.2)

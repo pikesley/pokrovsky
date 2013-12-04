@@ -152,7 +152,7 @@ module Pokrovsky
         @h.user = 'pikesley'
       end
 
-      it 'should have 112 commits' do #, :vcr do
+      it 'should have 112 commits', :vcr do
         @h.max_commits.should == 112
       end
 
