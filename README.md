@@ -4,7 +4,7 @@
 [![Coverage Status](https://coveralls.io/repos/pikesley/pokrovsky/badge.png)](https://coveralls.io/r/pikesley/pokrovsky)
 [![License](http://img.shields.io/license/mit.png?color=green)](http://pikesley.mit-license.org/)
 [![This Badge](http://img.shields.io/this%20badge/attained.png?color=green)](http://www.pokemon.com/uk/)
-[![Badge Status](http://img.shields.io/badges/6/6.png?color=green
+[![Badge Status](http://img.shields.io/badges/7/7.png?color=green
 )](http://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
 #Pokrovsky
