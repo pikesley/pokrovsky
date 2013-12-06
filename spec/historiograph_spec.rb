@@ -135,7 +135,7 @@ module Pokrovsky
       end
     end
 
-    describe 'get max commits'  do
+    describe 'get max commits' do
       before :each do
         Timecop.freeze Time.local 2013, 12, 03
         @json   = '{
