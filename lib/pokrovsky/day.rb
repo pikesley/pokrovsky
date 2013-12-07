@@ -1,43 +1,34 @@
 module Pokrovsky
   class Day
-    attr_reader :date, :strength
+    attr_reader :date, :intensity, :max_commits, :current_score
 
-    include Enumerable
-
-    def initialize date
-      @date     = date
-      @strength = 4
-      @commits_per_day = 18
+    def initialize date, intensity, max_commits, current_score
+      @date          = date
+      @intensity     = intensity
+      @max_commits   = max_commits
+      @current_score = current_score
 
       populate
     end
 
     def populate
+      one_third_of_max_commits            = (@max_commits / 3).to_i
+      this_times_the_intensity            = one_third_of_max_commits * @intensity
+      total_commits                       = this_times_the_intensity
+      total_commits_less_existing_commits = total_commits - @current_score
+
       @commits = []
-      (@strength * @commits_per_day).times do
+      total_commits_less_existing_commits.times do
         @commits << Pokrovsky::Commit.new(@date)
       end
-    end
-
-    def strength= strength
-      @strength = strength
-      populate
-    end
-
-    def each(&block)
-      @commits.each(&block)
     end
 
     def length
       @commits.length
     end
 
-    def [] key
-      @commits[key]
-    end
-
     def inspect
-      "< %s: date: %s, commits: %d>" % [
+      "< %s: date: %s, commits: %d >" % [
           self.class,
           @date,
           @commits

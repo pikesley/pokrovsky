@@ -19,7 +19,7 @@ module Pokrovsky
       @width.times do |i|
         @json.each do |row|
           if row[i] != 0
-            @days << Pokrovsky::Day.new(date.strftime "%F")
+            @days << Pokrovsky::Day.new(date.strftime("%F"), row[i], get_max_commits)
           end
           date += 1
         end
