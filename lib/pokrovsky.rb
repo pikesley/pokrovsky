@@ -40,9 +40,9 @@ class PokrovskyService < Sinatra::Base
     }
     c.perform
 
-    @h      = Pokrovsky::Historiograph.new c.body_str
-    @h.user = params[:user]
-    @h.repo = params[:repo]
+    @h      = Pokrovsky::Historiograph.new c.body_str, params[:user], params[:repo]
+ #   @h.user = params[:user]
+ #   @h.repo = params[:repo]
     halt 200, { 'Content-Type' => 'text/plain' }, @h.to_s
   end
 

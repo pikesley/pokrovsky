@@ -7,26 +7,37 @@ module Pokrovsky
 
     include Enumerable
 
-    def initialize json
-      @json  = JSON.parse(json)['data']
-      @width = @json[0].length
+    def initialize json, user, repo
+      @json             = JSON.parse(json)['data']
+      @width            = @json[0].length
+      @user             = user
+      @repo             = repo
+      @start_date       = get_start_date
+      @current_calendar = get_current_calendar
+
       populate
     end
 
     def populate
       @days = []
-      date  = start_date
+      date  = get_start_date
       @width.times do |i|
         @json.each do |row|
           if row[i] != 0
-            @days << Pokrovsky::Day.new(date.strftime "%F")
+            nice_date = date.strftime "%F"
+            @days << Pokrovsky::Day.new(
+                nice_date,
+                row[i],
+                get_max_commits,
+                @current_calendar[nice_date]
+            )
           end
           date += 1
         end
       end
     end
 
-    def start_date
+    def get_start_date
       year_ago = Date.parse(Time.new.to_s) - 365
       offset   = ((52 - @width) / 2) * 7
 
@@ -34,7 +45,6 @@ module Pokrovsky
       while not start_date.sunday?
         start_date += 1
       end
-
       start_date
     end
 
@@ -46,28 +56,28 @@ module Pokrovsky
       @days.length
     end
 
-    def user= user
-      @user = user
-      get_max_commits
-    end
-
     def get_max_commits
-      @max_commits ||= begin
-        url       = 'https://github.com/users/%s/contributions_calendar_data' % [
-            @user
-        ]
-        c         = Curl::Easy.new("%s" % url)
-        c.headers = {
-            'Accept' => 'application/json'
-        }
-        c.perform
-
-        (JSON.parse(c.body_str).map { |i| i = i[-1] }).max.to_i
-      end
+      (@current_calendar.map { |k, v| v }).max
     end
 
-    def multiplier
-      (@max_commits / 4).to_i
+    def get_current_calendar
+      url       = 'https://github.com/users/%s/contributions_calendar_data' % [
+          @user
+      ]
+      c         = Curl::Easy.new("%s" % url)
+      c.headers = {
+          'Accept' => 'application/json'
+      }
+      c.perform
+
+      @current_calendar = {}
+      JSON.parse(c.body_str).each do |pair|
+        d                    = Date.parse(pair[0])
+        k                    = d.strftime "%F"
+        @current_calendar[k] = pair[1]
+      end
+
+      @current_calendar
     end
 
     def to_s
@@ -95,6 +105,7 @@ git push -u origin master
       ]
       s
     end
+
   end
 end
 
