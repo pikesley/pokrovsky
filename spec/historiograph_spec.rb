@@ -42,8 +42,8 @@ module Pokrovsky
         @d = @h[30]
       end
 
-      it 'should have 104 commits' do
-        @d.length.should == 104
+      it 'should have 140 commits' do
+        @d.length.should == 140
       end
     end
   end

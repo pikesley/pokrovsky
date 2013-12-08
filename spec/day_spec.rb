@@ -22,24 +22,24 @@ module Pokrovsky
       @d.current_score.should == 19
     end
 
-    it 'should be ready to unleash 85 commits' do
-      @d.length.should == 85
+    it 'should be ready to unleash 89 commits' do
+      @d.length.should == 89
     end
 
     before :each do
       @e = Day.new '1974-06-15', 3, 67, 21
     end
 
-    it 'should be loaded with 45 commits' do
-      @e.length.should == 45
+    it 'should be loaded with 48 commits' do
+      @e.length.should == 48
     end
 
     it 'should have strings that look like git commits' do
       @e.to_s.should match /GIT_AUTHOR_DATE=1974-06-15T12:00:00 GIT_COMMITTER_DATE=1974-06-15T12:00:00 git commit --allow-empty -m "Rewriting History!" > \/dev\/null/
     end
 
-    it 'should have 45 of those' do
-      @e.to_s.lines.length.should == 45
+    it 'should have 48 of those' do
+      @e.to_s.lines.length.should == 48
     end
 
     it 'should contain identical commits' do

@@ -12,7 +12,7 @@ module Pokrovsky
     end
 
     def populate
-      one_third_of_max_commits            = (@max_commits / 3).to_i
+      one_third_of_max_commits            = (@max_commits / 3.0).ceil
       this_times_the_intensity            = one_third_of_max_commits * @intensity
       total_commits                       = this_times_the_intensity
       total_commits_less_existing_commits = total_commits - @current_score
