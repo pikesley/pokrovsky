@@ -50,7 +50,7 @@ http_interactions:
       Server:
       - GitHub.com
       Date:
-      - Sat, 07 Dec 2013 23:41:00 GMT
+      - Sat, 07 Dec 2013 23:55:04 GMT
       Content-Type:
       - application/json; charset=utf-8
       Status:
@@ -62,7 +62,7 @@ http_interactions:
       X-Frame-Options:
       - deny
       Set-Cookie:
-      - logged_in=no; domain=.github.com; path=/; expires=Wed, 07-Dec-2033 23:41:00
+      - logged_in=no; domain=.github.com; path=/; expires=Wed, 07-Dec-2033 23:55:04
         GMT; secure; HttpOnly
       X-Runtime:
       - '15'
@@ -71,7 +71,7 @@ http_interactions:
       Content-Length:
       - '6281'
       X-Github-Request-Id:
-      - 574A4CAB:549C:21D35A2:52A3B20B
+      - 574A4CAB:2A9C:EB72A4:52A3B557
       Vary:
       - Accept-Encoding
     body:

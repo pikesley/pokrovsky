@@ -13,11 +13,11 @@ module NavigationHelpers
       when /the home\s?page/
         '/'
 
-      when /someuser\/somerepo\/a/
-        '/someuser/somerepo/a'
+      when /pikesley\/testicicle\/a/
+        '/pikesley/testicicle/a'
 
-      when /someuser\/somerepo\/ROB TS/
-        '/someuser/somerepo/ROB%20TS'
+      when /pikesley\/testicicle\/ROB TS/
+        '/pikesley/testicicle/ROB%20TS'
 
       # Add more mappings here.
       # Here is an example that pulls values out of the Regexp:
