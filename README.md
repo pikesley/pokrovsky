@@ -37,7 +37,7 @@ Create a new, disposable Github repo, then try this:
 
     DISPOSABLEREPO=dummy
     GRAFFITI=`echo "© 1982" | sed "s: :%20:g"`
-    GITHUBUSER=`git config --get user.name`
+    GITHUBUSER=yourgithublogin
     curl "http://pokrovsky.herokuapp.com/${GITHUBUSER}/${DISPOSABLEREPO}/${GRAFFITI}" | bash
 
 ###Notes
