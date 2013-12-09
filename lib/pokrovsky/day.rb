@@ -16,6 +16,9 @@ module Pokrovsky
       this_times_the_intensity            = one_third_of_max_commits * @intensity
       total_commits                       = this_times_the_intensity
       total_commits_less_existing_commits = total_commits - @current_score
+      if total_commits_less_existing_commits == 0
+        total_commits_less_existing_commits = 16
+      end
 
       @commits = []
       total_commits_less_existing_commits.times do

@@ -45,5 +45,13 @@ module Pokrovsky
     it 'should contain identical commits' do
       @e.to_s.lines.uniq.length.should == 1
     end
+
+    before :each do
+      @f = Day.new '1970-01-01', 4, 0, 0
+    end
+
+    it 'should not just give up because everything is empty' do
+      @f.length.should == 16
+    end
   end
 end
