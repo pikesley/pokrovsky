@@ -46,3 +46,4 @@ Create a new, disposable Github repo, then try this:
 * The calendar is 52 weeks wide. Spectrum characters are 8 units wide. So, you know, 6-character strings.
 * If you decide this isn't for you after all, just delete the repo and it will all go away.
 * This owes a _massive_ debt to [Gelstudios'](https://github.com/gelstudios) splendid [Gitfiti](https://github.com/gelstudios/gitfiti).
+* I've made a [commit-history video](https://vimeo.com/81947976) using [Gource](https://code.google.com/p/gource/).
