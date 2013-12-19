@@ -50,3 +50,6 @@ GIT_AUTHOR_DATE=2013-01-06
    """
 GIT_AUTHOR_DATE=2013-02-05
    """
+
+  Scenario: it should not blow up on strings longer than 6 characters
+    When I go to "/pikesley/testicicle/long_string"

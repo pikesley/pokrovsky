@@ -19,8 +19,8 @@ module Pokrovsky
       @h[0].class.should == Pokrovsky::Day
     end
 
-    it 'should have max_commits of 79' do
-      @h.get_max_commits.should == 79
+    it 'should have max_commits of 108' do
+      @h.get_max_commits.should == 108
     end
 
     it 'should dump a full git-abuse script' do
@@ -42,8 +42,8 @@ module Pokrovsky
         @d = @h[30]
       end
 
-      it 'should have 140 commits' do
-        @d.length.should == 140
+      it 'should have 144 commits' do
+        @d.length.should == 144
       end
     end
   end

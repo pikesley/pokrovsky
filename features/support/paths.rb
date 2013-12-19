@@ -19,6 +19,8 @@ module NavigationHelpers
       when /pikesley\/testicicle\/ROB TS/
         '/pikesley/testicicle/ROB%20TS'
 
+      when /pikesley\/testicicle\/long_string/
+        '/pikesley/testicicle/long_string'
       # Add more mappings here.
       # Here is an example that pulls values out of the Regexp:
       #
