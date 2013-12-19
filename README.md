@@ -27,7 +27,7 @@ Will return a bash script which, when run locally, will:
 * create a series of empty commits
 * push the repo to **git@github.com:_:githublogin/:repo_.git**
 
-The commits will be structured such that they will 'write' the _:text_ on the Github commit calendar using the 1982 Sinclair Spectrum character set. There is a limitation in that the Spectrum font is 8 units high, and the Github calendar has a height of 7 (see [http://uncleclive.herokuapp.com/#textpokrovsky](http://uncleclive.herokuapp.com/#textpokrovsky) for an explanation of how this is handled).
+The commits will be structured such that they will 'write' the **first six characters** of _:text_ on the Github commit calendar using the 1982 Sinclair Spectrum character set. There is a limitation in that the Spectrum font is 8 units high, and the Github calendar has a height of 7 (see [http://uncleclive.herokuapp.com/#textpokrovsky](http://uncleclive.herokuapp.com/#textpokrovsky) for an explanation of how this is handled).
 
 All of the above assumes that you can do public-key authentication to Github from the box on which you're running this.
 
@@ -43,7 +43,6 @@ Create a new, disposable Github repo, then try this:
 ###Notes
 
 * You should start with a fresh repo each time, both locally and on Github. The script makes no attempt to create a new Github repo, and it certainly doesn't try to delete anything from there. If you can't work out how to do this safely, you probably shouldn't use this service.
-* The calendar is 52 weeks wide. Spectrum characters are 8 units wide. So, you know, 6-character strings.
 * If you decide this isn't for you after all, just delete the repo and it will all go away.
 * This owes a _massive_ debt to [Gelstudios'](https://github.com/gelstudios) splendid [Gitfiti](https://github.com/gelstudios/gitfiti).
 * I've made a [commit-history video](https://vimeo.com/81947976) using [Gource](https://code.google.com/p/gource/).

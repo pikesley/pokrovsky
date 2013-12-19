@@ -31,7 +31,7 @@ class PokrovskyService < Sinatra::Base
   get '/:user/:repo/:text' do
     ssfaas    = 'http://uncleclive.herokuapp.com/'
     text      = '/%s/' % [
-        URI.encode(params[:text])
+        URI.encode(params[:text][0...6])
     ]
     full_url  = URI.join(ssfaas, text, 'pokrovsky')
     c         = Curl::Easy.new("%s" % full_url)
