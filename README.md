@@ -3,9 +3,8 @@
 [![Dependency Status](https://gemnasium.com/pikesley/pokrovsky.png)](https://gemnasium.com/pikesley/pokrovsky)
 [![Code Climate](https://codeclimate.com/github/pikesley/pokrovsky.png)](https://codeclimate.com/github/pikesley/pokrovsky)
 [![License](http://b.adge.me/:license-mit-green.svg)](http://pikesley.mit-license.org/)
-[![Things Cleaned](http://img.shields.io/things%20cleaned/all.png?color=green)](http://hyperboleandahalf.blogspot.co.uk/2010/06/this-is-why-ill-never-be-adult.html)
-[![Badge Status](http://b.adge.me/:badges-7/7-green.svg
-)](http://www.youtube.com/watch?v=s7rHCYtbZRo)
+[![Things Cleaned](http://b.adge.me/:things%20cleaned-all-green.svg)](http://hyperboleandahalf.blogspot.co.uk/2010/06/this-is-why-ill-never-be-adult.html)
+[![Badge Status](http://b.adge.me/:badges-7/7-green.svg)](http://www.youtube.com/watch?v=s7rHCYtbZRo)
 
 #Pokrovsky
 
