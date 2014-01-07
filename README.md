@@ -1,10 +1,10 @@
-[![Build Status](https://travis-ci.org/pikesley/pokrovsky.png?branch=master)](https://travis-ci.org/pikesley/pokrovsky)
+[![Build Status](http://b.adge.me/travis/pikesley/pokrovsky.svg)](https://travis-ci.org/pikesley/pokrovsky)
+[![Coverage Status](http://b.adge.me/coveralls/pikesley/pokrovsky.svg)](https://coveralls.io/r/pikesley/pokrovsky)
 [![Dependency Status](https://gemnasium.com/pikesley/pokrovsky.png)](https://gemnasium.com/pikesley/pokrovsky)
 [![Code Climate](https://codeclimate.com/github/pikesley/pokrovsky.png)](https://codeclimate.com/github/pikesley/pokrovsky)
-[![Coverage Status](https://coveralls.io/repos/pikesley/pokrovsky/badge.png)](https://coveralls.io/r/pikesley/pokrovsky)
+[![License](http://b.adge.me/:license-mit-green.svg)](http://pikesley.mit-license.org/)
 [![Things Cleaned](http://img.shields.io/things%20cleaned/all.png?color=green)](http://hyperboleandahalf.blogspot.co.uk/2010/06/this-is-why-ill-never-be-adult.html)
-[![License](http://img.shields.io/license/mit.png?color=green)](http://pikesley.mit-license.org/)
-[![Badge Status](http://img.shields.io/badges/7/7.png?color=green
+[![Badge Status](http://b.adge.me/:badges-7/7-green.svg
 )](http://www.youtube.com/watch?v=s7rHCYtbZRo)
 
 #Pokrovsky
