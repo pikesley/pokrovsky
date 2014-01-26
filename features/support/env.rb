@@ -10,7 +10,7 @@ require 'rspec'
 require 'timecop'
 
 require 'coveralls'
-Coveralls.wear!
+Coveralls.wear_merged!
 
 Capybara.app = PokrovskyService
 

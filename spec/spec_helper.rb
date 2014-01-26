@@ -1,7 +1,7 @@
 require 'timecop'
 require 'vcr'
 require 'coveralls'
-Coveralls.wear!
+Coveralls.wear_merged!
 
 require 'pokrovsky'
 require 'pokrovsky/commit'
