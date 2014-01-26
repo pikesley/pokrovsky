@@ -2,9 +2,9 @@
 [![Coverage Status](http://b.adge.me/coveralls/pikesley/pokrovsky.svg)](https://coveralls.io/r/pikesley/pokrovsky)
 [![Dependency Status](http://b.adge.me/gemnasium/pikesley/pokrovsky.svg)](https://gemnasium.com/pikesley/pokrovsky)
 [![Code Climate](http://b.adge.me/codeclimate/github/pikesley/pokrovsky.svg)](https://codeclimate.com/github/pikesley/pokrovsky)
-[![License](http://b.adge.me/:license-mit-green.svg)](http://pikesley.mit-license.org/)
-[![Things Cleaned](http://b.adge.me/:things%20cleaned-all-green.svg)](http://hyperboleandahalf.blogspot.co.uk/2010/06/this-is-why-ill-never-be-adult.html)
-[![Badge Status](http://b.adge.me/:badges-7/7-green.svg)](http://www.youtube.com/watch?v=s7rHCYtbZRo)
+[![License](http://b.adge.me/:license-mit-blue.svg)](http://pikesley.mit-license.org/)
+[![Things Cleaned](http://b.adge.me/:things%20cleaned-all-brightgreen.svg)](http://hyperboleandahalf.blogspot.co.uk/2010/06/this-is-why-ill-never-be-adult.html)
+[![Badge Status](http://b.adge.me/:badges-7/7-brightgreen.svg)](http://www.youtube.com/watch?v=s7rHCYtbZRo)
 
 #Pokrovsky
 
