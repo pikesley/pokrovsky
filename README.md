@@ -18,7 +18,7 @@ The unbroken chain of pointless Things-as-a-Service continues. This one uses my 
 
 ###API
 
-####/:githublogin/:repo/:text
+#### `/:githublogin/:repo/:text`
 
 Will return a bash script which, when run locally, will:
 
