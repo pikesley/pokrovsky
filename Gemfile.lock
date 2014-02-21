@@ -163,7 +163,7 @@ DEPENDENCIES
   guard-rspec
   haml
   kramdown
-  rack-google-analytics (~> 1.0)
+  rack-google-analytics
   rack-test
   rake
   rspec

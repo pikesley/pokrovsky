@@ -10,7 +10,7 @@ gem 'curb'
 gem 'haml'
 gem 'kramdown'
 gem 'activesupport'
-gem 'rack-google-analytics', '~> 1.0'
+gem 'rack-google-analytics'
 
 group :test do
   gem 'capybara-webkit'
