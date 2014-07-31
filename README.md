@@ -9,7 +9,7 @@
 
 ##Github History Vandalism as a Service
 
-_v0.1.1_
+_v0.1.2_
 
 ##Introduction
 
