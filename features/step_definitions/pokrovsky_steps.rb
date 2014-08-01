@@ -9,4 +9,3 @@ Then(/^the response should( not)? contain this text:$/) do |boolean, text|
     page.should have_content(text)
   end
 end
-
