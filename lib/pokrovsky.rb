@@ -40,9 +40,8 @@ class PokrovskyService < Sinatra::Base
     }
     c.perform
 
-    halt c.body_str
-#    @h      = Pokrovsky::Historiograph.new c.body_str, params[:user], params[:repo]
-#    halt 200, { 'Content-Type' => 'text/plain' }, @h.to_s
+    @h      = Pokrovsky::Historiograph.new c.body_str, params[:user], params[:repo]
+    halt 200, { 'Content-Type' => 'text/plain' }, @h.to_s
   end
 
   run! if app_file == $0
