@@ -29,19 +29,23 @@ class PokrovskyService < Sinatra::Base
   end
 
   get '/:user/:repo/:text' do
-    ssfaas    = 'http://uncleclive.herokuapp.com/'
-    text      = '/%s/' % [
+#    ssfaas    = 'http://uncleclive.herokuapp.com/'
+    ssfaas = 'http://dead-cockroach.herokuapp.com'
+#    text      = '/%s/' % [
+    text      = '/%s' % [
         URI.encode(params[:text][0...6])
     ]
-    full_url  = URI.join(ssfaas, text, 'pokrovsky')
+#    full_url  = URI.join(ssfaas, text, 'pokrovsky')
+    full_url  = URI.join(ssfaas, text)
     c         = Curl::Easy.new("%s" % full_url)
     c.headers = {
         'Accept' => 'application/json'
     }
     c.perform
 
-    @h      = Pokrovsky::Historiograph.new c.body_str, params[:user], params[:repo]
-    halt 200, { 'Content-Type' => 'text/plain' }, @h.to_s
+    halt c.body_str
+#    @h      = Pokrovsky::Historiograph.new c.body_str, params[:user], params[:repo]
+#    halt 200, { 'Content-Type' => 'text/plain' }, @h.to_s
   end
 
   run! if app_file == $0

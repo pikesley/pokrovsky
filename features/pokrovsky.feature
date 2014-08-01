@@ -8,7 +8,7 @@ Feature: get git abuse script
     And I should see "API"
 
   Scenario: Get script for a single character
-    Given the date is "2013-12-07"
+    Given the date is "2014-08-01"
     When I go to "/pikesley/testicicle/a"
     Then the response should contain this text:
     """
