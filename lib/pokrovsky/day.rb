@@ -6,7 +6,7 @@ module Pokrovsky
       @date          = date
       @intensity     = intensity
       @max_commits   = max_commits
-      @current_score = current_score
+      @current_score = current_score #||= 0
 
       populate
     end
