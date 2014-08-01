@@ -9,11 +9,11 @@
 
 ##Github History Vandalism as a Service
 
-_v0.1.2_
+_v0.2.0_
 
 ##Introduction
 
-The unbroken chain of pointless Things-as-a-Service continues. This one uses my [Uncle Clive](http://uncleclive.herokuapp.com) service to generate a script suitable for vandalising your Git commit history ([my account](http://github.com/pikesley) is probably displaying an example right now).
+The unbroken chain of pointless Things-as-a-Service continues. This one uses my [Uncle Clive](http://uncleclive.herokuapp.com) service (via my [Dead Cockroach](http://dead-cockroach.herokuapp.com/) service) to generate a script suitable for vandalising your Git commit history ([my account](http://github.com/pikesley) is probably displaying an example right now).
 
 ###API
 
@@ -25,7 +25,7 @@ Will return a bash script which, when run locally, will:
 * create a series of empty commits
 * push the repo to **git@github.com:_:githublogin/:repo_.git**
 
-The commits will be structured such that they will 'write' the **first six characters** of _:text_ on the Github commit calendar using the 1982 Sinclair Spectrum character set. There is a limitation in that the Spectrum font is 8 units high, and the Github calendar has a height of 7 (see [http://uncleclive.herokuapp.com/#textpokrovsky](http://uncleclive.herokuapp.com/#textpokrovsky) for an explanation of how this is handled).
+The commits will be structured such that they will 'write' the **first six characters** of _:text_ on the Github commit calendar using the 1982 Sinclair Spectrum character set. There is a limitation in that the Spectrum font is 8 units high, and the Github calendar has a height of 7 (see [http://dead-cockroach.herokuapp.com/](http://dead-cockroach.herokuapp.com/) for an explanation of how this is handled).
 
 All of the above assumes that you can do public-key authentication to Github from the box on which you're running this.
 
