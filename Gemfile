@@ -11,7 +11,7 @@ gem 'haml'
 gem 'kramdown'
 gem 'activesupport'
 gem 'rack-google-analytics'
-gem 'actionpack', '~> 4'
+gem 'actionpack' #, '~> 4'
 
 group :test do
   gem 'capybara-webkit'
@@ -26,5 +26,5 @@ group :test do
   gem 'coveralls', require: false
   gem 'timecop'
   gem 'vcr'
-  gem 'webmock', '= 1.15.2'
+  gem 'webmock' #, '= 1.15.2'
 end
