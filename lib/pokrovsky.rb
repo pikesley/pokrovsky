@@ -12,7 +12,7 @@ class PokrovskyService < Sinatra::Base
   use Rack::GoogleAnalytics, :tracker => 'UA-20895204-12'
 
   @@locals = {
-      :bootstrap_theme => '../lavish-bootstrap.css',
+#      :bootstrap_theme => '../lavish-bootstrap.css',
       :github          => {
           :user    => 'pikesley',
           :project => 'pokrovsky',
