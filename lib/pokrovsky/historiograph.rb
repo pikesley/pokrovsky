@@ -61,7 +61,7 @@ module Pokrovsky
     end
 
     def get_current_calendar
-      url       = 'https://github.com/users/%s/contributions_calendar_data' % [
+    url       = 'https://github.com/users/%s/contributions' % [
           @user
       ]
       c         = Curl::Easy.new("%s" % url)
@@ -107,4 +107,3 @@ git push -u origin master
     end
   end
 end
-

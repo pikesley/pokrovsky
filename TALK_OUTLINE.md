@@ -1,8 +1,10 @@
 #Vandalising your Github commit history because WHY NOT?
 
-##Who am I
+#Who am I
 
 ##The Github commit graph
+###These are addressable pixels
+####We just need to know the correct magic spells
 ###It is valid to make commits in the past
 ###Show example of a commit
 
