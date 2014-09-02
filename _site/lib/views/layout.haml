@@ -1,0 +1,29 @@
+!!! 5
+%html(lang="en")
+  %head
+    %title= title
+    %link{:rel => 'stylesheet', :href => '//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css', :type => "text/css"}
+    -if defined? additional_styles
+      -additional_styles.each do |style|
+        %link{:rel => 'stylesheet', :href => style, :type => "text/css"}
+
+    -if defined? bootstrap_theme
+      %link{:rel => 'stylesheet', :href => bootstrap_theme, :type => "text/css"}
+
+  %body
+    .body
+    -if defined? github[:ribbon]
+      %a{:href => "https://github.com/%s/%s" % [ github[:user], github[:project] ] }
+        %img{:style => "position: absolute; top: 0; right: 0; border: 0;",
+           :src => "https://s3.amazonaws.com/github/ribbons/forkme_%s.png" % [ github[:ribbon] ],
+           :alt => "Fork me on GitHub"}
+
+      .container
+        = yield
+
+    %footer
+      %p.text-center
+        %a.btn.btn-default{:href => "http://github.com/%s/%s" % [ github[:user], github[:project] ] }Source on Github
+        %a.btn.btn-default{:href => "http://travis-ci.org/%s/%s" % [ github[:user], github[:project] ] }Built on Travis
+        %a.btn.btn-default{:href => "http://heroku.com"}Hosted on Heroku
+        %a.btn.btn-default{:href => "http://sam.pikesley.org"}More of my stuff
