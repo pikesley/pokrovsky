@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Vandalising your Github commit history because WHY NOT?</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Vandalising your Github commit history because WHY NOT?</h1>
+					<h3>Massively over-engineering things is fun</h3>
+					<p>
+						<small><a href="http://twitter.com/pikesley">@pikesley</a></small>
+					</p>
+				</section>
+
+      <section>
+        <h1>Who am I?</h1>
+        <ul>
+          <li>
+            Head of Robots at the <a href="http://theodi.org">The Open Data Institute</a>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>The Github commit calendar</h2>
+        <img src="github-vandalism/commit-graph.png" />
+        <ul>
+          <li>
+            Those are addressable pixels
+          </li>
+          <li class="fragment">
+            We just need to construct the correct incantations
+          </li>
+        </ul>
+      </section>
+
+		  <section>
+        <h1>Gitfiti</h1>
+        <img src="github-vandalism/gitfiti.png" />
+        <ul>
+          <li>
+            Great fun
+          </li>
+          <li>
+            But written in Python
+          </li>
+          <li>
+            <a href="https://github.com/gelstudios/gitfiti">https://github.com/gelstudios/gitfiti</a>
+          </li>
+          <li class="fragment">
+            Ultimately, it just creates a load of cleverly-timestamped git commits
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>The Sinclair Spectrum</h2>
+        <img src="github-vandalism/spectrum.png" />
+      </section>
+
+      <section>
+        <h2>The font</h2>
+        <img src="github-vandalism/sinclair-font.png" />
+        <ul>
+          <li>
+            It's a list of bytes
+          </li>
+          <li>
+            Which I procured from some kind soul on <code>comp.sys.sinclair</code> many years ago
+          </li>
+        </ul>
+        <img src="github-vandalism/character-set.png" />
+        <ul>
+          <li class="fragment">
+            I previously wrote this in PHP in 2003-ish, and Python in 2010-ish
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <section>
+        <h1>Building it as a RESTful webservice</h1>
+        </section>
+        <section>
+          <h1>This is my boss</h1>
+          <img src="github-vandalism/jeni.jpg" />
+        </section>
+        <section>
+          <h1>Content negotiation</h1>
+        </section>
+        <section>
+          <h1>application/json</h1>
+          <img src="github-vandalism/json.png" />
+        </section>
+        <section>
+          <h1>text/plain</h1>
+          <img src="github-vandalism/text.png" />
+        </section>
+        <section>
+          <h1>text/html</h1>
+          <img src="github-vandalism/html.png" />
+        </section>
+        <section>
+          <h2><a href="http://uncleclive.herokuapp.com/">http://uncleclive.herokuapp.com/</a></h2>
+        </section>
+      </section>
+
+      <section>
+        <h1>The future is amazing</h1>
+        <ul>
+          <li class="fragment">
+            Built test-first, with cucumber
+          </li>
+          <li class="fragment">
+            Using Sinatra
+          </li>
+          <li class="fragment">
+            Github
+          </li>
+          <li class="fragment">
+            Travis-CI
+          </li>
+          <li class="fragment">
+            Heroku
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <section>
+          <h1>Pokrovsky</h1>
+          <ul>
+            <li>
+              So we can write in the Spectrum font on the Github contributions calendar
+                <ul>
+                  <li>
+                    Almost
+                 </li>
+               </ul>
+             </li>
+            <li>
+              The Spectrum font is 8 units high, the calendar is 7 days high
+            </li>
+            <li>
+              So we sometimes have to chop out some rows
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h1>The rules</h1>
+          <ul>
+            <li>
+              If a character has a blank top row, that row will be excised, else
+            </li>
+            <li>
+              If a character has a blank bottom row, that row will be excised, else
+            </li>
+            <li>
+              <em>rows[4]</em> will be excised
+            </li>
+          </ul>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h1>How it actually works</h1>
+          <ul>
+            <li>
+              Git lets you rewrite history
+            </li>
+            <li>
+              So we look at the contributions history and work out the busiest day from the last year
+            </li>
+            <li>
+              Then for each day where we want to draw a pixel, we make 125% of that number of empty commits
+            </li>
+            <li>
+              So we make a whole load of empty commits with artfully constructed timestamps
+            </li>
+          </ul>
+          <img src="github-vandalism/commit.png" />
+          <ul>
+            <li>
+              <a href="http://pokrovsky.herokuapp.com/">http://pokrovsky.herokuapp.com/</a>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h1>Lessons learned</h1>
+          <ul>
+            <li class="fragment">
+              Don't use undocumented APIs
+            </li>
+            <li class="fragment">
+              Be careful when using something like VCR to isolate your tests from the actual APIs
+            </li>
+          </ul>
+        </section>
+      </section>
+
+      <section>
+        <h1>The final result</h1>
+        <img src="github-vandalism/final-result.png" />
+      </section>
+
+      <section>
+        <h2>Extracting the 8-into-7 adapter into a middle tier</h2>
+        <ul>
+          <li>
+            Because it made the Uncle Clive API inelegant
+          </li>
+          <li>
+            TDD (and use of actual design patterns) made this <em>really easy</em> to do
+          </li>
+          <li>
+            <a href="http://dead-cockroach.herokuapp.com/">http://dead-cockroach.herokuapp.com/</a>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h1>What's next</h1>
+        <ul>
+          <li>
+            Extract the good parts out into a Gem or two
+          </li>
+          <li>
+            Get Uncle Clive to generate PNGs
+            <ul>
+              <li class="fragment">
+                This feels like something I should be able to do but apparently I have no idea what I'm doing
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h1>Questions?</h1>
+      </section>
+  	</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
