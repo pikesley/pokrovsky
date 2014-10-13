@@ -44,4 +44,4 @@ Create a new, disposable Github repo, then try this:
 * If you decide this isn't for you after all, just delete the repo and it will all go away.
 * This owes a _massive_ debt to [Gelstudios'](https://github.com/gelstudios) splendid [Gitfiti](https://github.com/gelstudios/gitfiti).
 * I've made a [commit-history video](https://vimeo.com/81947976) using [Gource](https://code.google.com/p/gource/).
-* I gave a talk about this at [EMF Camp 2014](https://frab.emfcamp.org/en/EMF2014/public/events/158), the slides are [here](http://pikesley.github.io/pokrovsky/#/) and I think there'll be some video soon.
+* I gave a talk about this at [EMF Camp 2014](https://frab.emfcamp.org/en/EMF2014/public/events/158), the slides are [here](http://pikesley.github.io/pokrovsky/#/) and there's video [here](https://www.youtube.com/watch?v=Qt_J0jNqtZg).
