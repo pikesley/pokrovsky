@@ -1,4 +1,5 @@
 require 'json'
+require 'pry'
 
 module Pokrovsky
   class Historiograph
@@ -65,17 +66,28 @@ module Pokrovsky
           @user
       ]
       c         = Curl::Easy.new("%s" % url)
-      c.headers = {
-          'Accept' => 'application/json'
-      }
+    #  c.headers = {
+    #      'Accept' => 'application/json'
+    #  }
       c.perform
 
+      # I AM JOHN MOTHERFUCKING FRUM
+      doc = Nokogiri::HTML c.body_str
+      dates = doc.xpath('//rect/@data-date')
+      counts = doc.xpath('//rect/@data-count')
       @current_calendar = {}
-      JSON.parse(c.body_str).each do |pair|
-        d                    = Date.parse(pair[0])
-        k                    = d.strftime "%F"
-        @current_calendar[k] = pair[1]
+      dates.count.times do |n|
+        date = dates[n].value
+        count = counts[n].value.to_i
+        @current_calendar[date] = count
       end
+
+#      @current_calendar = {}
+#      JSON.parse(c.body_str).each do |pair|
+#        d                    = Date.parse(pair[0])
+#        k                    = d.strftime "%F"
+#        @current_calendar[k] = pair[1]
+#      end
 
       @current_calendar
     end

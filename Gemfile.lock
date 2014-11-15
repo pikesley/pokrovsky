@@ -175,6 +175,8 @@ DEPENDENCIES
   guard-rspec
   haml
   kramdown
+  nokogiri
+  pry
   rack-google-analytics
   rack-test
   rake

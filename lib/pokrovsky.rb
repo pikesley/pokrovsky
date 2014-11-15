@@ -7,6 +7,7 @@ require 'haml'
 require 'kramdown'
 require 'rack-google-analytics'
 require 'curb'
+require 'nokogiri'
 
 class PokrovskyService < Sinatra::Base
   use Rack::GoogleAnalytics, :tracker => 'UA-20895204-12'

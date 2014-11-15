@@ -15,7 +15,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 15 Nov 2014 17:06:18 GMT
+      - Sat, 15 Nov 2014 17:07:44 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -52,7 +52,7 @@ http_interactions:
       Server:
       - GitHub.com
       Date:
-      - Sat, 15 Nov 2014 17:06:19 GMT
+      - Sat, 15 Nov 2014 17:07:45 GMT
       Content-Type:
       - text/html; charset=utf-8
       Transfer-Encoding:
@@ -80,22 +80,22 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Set-Cookie:
-      - logged_in=no; domain=.github.com; path=/; expires=Wed, 15-Nov-2034 17:06:19
+      - logged_in=no; domain=.github.com; path=/; expires=Wed, 15-Nov-2034 17:07:45
         GMT; secure; HttpOnly
       X-Request-Id:
-      - 1341618a889246e9abb086566492a3d2
+      - 92ca30d9d18ca4e68313e6ea5e90a91e
       X-Runtime:
-      - '0.032379'
+      - '0.050224'
       X-Rack-Cache:
       - miss
       X-Github-Request-Id:
-      - 5102724B:5F9A:15EA5FF1:5467880B
+      - 5102724B:5F9C:B63308A:54678861
       Strict-Transport-Security:
       - max-age=31536000; includeSubdomains; preload
       X-Content-Type-Options:
       - nosniff
       X-Served-By:
-      - df78b016db710335918cac342ae2a21d
+      - bc4c952d089501afbfc8f7ff525da31c
     body:
       encoding: ASCII-8BIT
       string: |

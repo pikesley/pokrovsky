@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.1.2'
+ruby '2.1.4'
 #ruby-gemset=pokrovsky
 
 gem 'sinatra'
@@ -12,6 +12,8 @@ gem 'kramdown'
 gem 'activesupport'
 gem 'rack-google-analytics'
 gem 'actionpack' #, '~> 4'
+gem 'nokogiri'
+gem 'pry'
 
 group :test do
   gem 'capybara-webkit'
