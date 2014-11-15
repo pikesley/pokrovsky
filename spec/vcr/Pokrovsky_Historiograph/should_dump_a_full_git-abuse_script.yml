@@ -1,0 +1,599 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://dead-cockroach.herokuapp.com/1974
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 15 Nov 2014 17:06:17 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/html;charset=utf-8
+      Content-Length:
+      - '484'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server:
+      - thin 1.6.2 codename Doc Brown
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"1974","data":[[0,0,0,4,4,0,0,0,0,0,4,4,4,4,0,0,0,4,4,4,4,4,4,0,0,0,0,0,4,0,0,0],[0,0,4,0,4,0,0,0,0,4,0,0,0,0,4,0,0,0,0,0,0,0,4,0,0,0,0,4,4,0,0,0],[0,0,0,0,4,0,0,0,0,4,0,0,0,0,4,0,0,0,0,0,0,4,0,0,0,0,4,0,4,0,0,0],[0,0,0,0,4,0,0,0,0,0,4,4,4,4,4,0,0,0,0,0,4,0,0,0,0,4,0,0,4,0,0,0],[0,0,0,0,4,0,0,0,0,0,0,0,0,0,4,0,0,0,0,4,0,0,0,0,0,4,4,4,4,4,4,0],[0,0,4,4,4,4,4,0,0,0,4,4,4,4,0,0,0,0,0,4,0,0,0,0,0,0,0,0,4,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]]}'
+    http_version: 
+  recorded_at: Sat, 07 Dec 2013 00:00:00 GMT
+- request:
+    method: get
+    uri: https://github.com/users/pikesley/contributions
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Sat, 15 Nov 2014 17:06:18 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - deny
+      Content-Security-Policy:
+      - 'default-src *; script-src assets-cdn.github.com collector-cdn.github.com;
+        object-src assets-cdn.github.com; style-src ''self'' ''unsafe-inline'' ''unsafe-eval''
+        assets-cdn.github.com; img-src ''self'' data: assets-cdn.github.com identicons.github.com
+        www.google-analytics.com collector.githubapp.com *.githubusercontent.com *.gravatar.com
+        *.wp.com; media-src ''none''; frame-src ''self'' render.githubusercontent.com
+        gist.github.com www.youtube.com player.vimeo.com checkout.paypal.com; font-src
+        assets-cdn.github.com; connect-src ''self'' ghconduit.com:25035 live.github.com
+        uploads.github.com www.google-analytics.com s3.amazonaws.com'
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      - X-PJAX
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Set-Cookie:
+      - logged_in=no; domain=.github.com; path=/; expires=Wed, 15-Nov-2034 17:06:18
+        GMT; secure; HttpOnly
+      X-Request-Id:
+      - edd8e7ccf7d8f4592bf3265314bf65bd
+      X-Runtime:
+      - '0.030716'
+      X-Rack-Cache:
+      - miss
+      X-Github-Request-Id:
+      - 5102724B:5F98:DDB750F:5467880A
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Served-By:
+      - d0e230454cb69aa01d4f86fc3a57b17f
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        <svg width="721" height="110" class="js-calendar-graph-svg">
+          <g transform="translate(20, 20)">
+              <g transform="translate(0, 0)">
+                  <rect class="day" width="11" height="11" y="65" fill="#8cc665" data-count="41" data-date="2013-11-15"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#d6e685" data-count="15" data-date="2013-11-16"/>
+              </g>
+              <g transform="translate(13, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#d6e685" data-count="8" data-date="2013-11-17"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#d6e685" data-count="29" data-date="2013-11-18"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#d6e685" data-count="3" data-date="2013-11-19"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#8cc665" data-count="38" data-date="2013-11-20"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#d6e685" data-count="20" data-date="2013-11-21"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#d6e685" data-count="23" data-date="2013-11-22"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#d6e685" data-count="2" data-date="2013-11-23"/>
+              </g>
+              <g transform="translate(26, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#eeeeee" data-count="0" data-date="2013-11-24"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#d6e685" data-count="20" data-date="2013-11-25"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#d6e685" data-count="13" data-date="2013-11-26"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#d6e685" data-count="12" data-date="2013-11-27"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#d6e685" data-count="14" data-date="2013-11-28"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#d6e685" data-count="3" data-date="2013-11-29"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#1e6823" data-count="146" data-date="2013-11-30"/>
+              </g>
+              <g transform="translate(39, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#d6e685" data-count="18" data-date="2013-12-01"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#8cc665" data-count="48" data-date="2013-12-02"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#d6e685" data-count="28" data-date="2013-12-03"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#8cc665" data-count="44" data-date="2013-12-04"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#d6e685" data-count="16" data-date="2013-12-05"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#d6e685" data-count="23" data-date="2013-12-06"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#d6e685" data-count="19" data-date="2013-12-07"/>
+              </g>
+              <g transform="translate(52, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#d6e685" data-count="16" data-date="2013-12-08"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#d6e685" data-count="21" data-date="2013-12-09"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#d6e685" data-count="13" data-date="2013-12-10"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#d6e685" data-count="14" data-date="2013-12-11"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#d6e685" data-count="22" data-date="2013-12-12"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#d6e685" data-count="26" data-date="2013-12-13"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#d6e685" data-count="19" data-date="2013-12-14"/>
+              </g>
+              <g transform="translate(65, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#1e6823" data-count="130" data-date="2013-12-15"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#1e6823" data-count="130" data-date="2013-12-16"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#1e6823" data-count="128" data-date="2013-12-17"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#1e6823" data-count="128" data-date="2013-12-18"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#1e6823" data-count="130" data-date="2013-12-19"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#1e6823" data-count="128" data-date="2013-12-20"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#d6e685" data-count="2" data-date="2013-12-21"/>
+              </g>
+              <g transform="translate(78, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#1e6823" data-count="128" data-date="2013-12-22"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#d6e685" data-count="1" data-date="2013-12-23"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#1e6823" data-count="128" data-date="2013-12-24"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#eeeeee" data-count="0" data-date="2013-12-25"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#eeeeee" data-count="0" data-date="2013-12-26"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#1e6823" data-count="128" data-date="2013-12-27"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#eeeeee" data-count="0" data-date="2013-12-28"/>
+              </g>
+              <g transform="translate(91, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#1e6823" data-count="128" data-date="2013-12-29"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#eeeeee" data-count="0" data-date="2013-12-30"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#1e6823" data-count="128" data-date="2013-12-31"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#eeeeee" data-count="0" data-date="2014-01-01"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#eeeeee" data-count="0" data-date="2014-01-02"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#1e6823" data-count="129" data-date="2014-01-03"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#eeeeee" data-count="0" data-date="2014-01-04"/>
+              </g>
+              <g transform="translate(104, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#1e6823" data-count="128" data-date="2014-01-05"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#d6e685" data-count="2" data-date="2014-01-06"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#1e6823" data-count="131" data-date="2014-01-07"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#d6e685" data-count="3" data-date="2014-01-08"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#d6e685" data-count="4" data-date="2014-01-09"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#1e6823" data-count="128" data-date="2014-01-10"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#eeeeee" data-count="0" data-date="2014-01-11"/>
+              </g>
+              <g transform="translate(117, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#1e6823" data-count="128" data-date="2014-01-12"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#d6e685" data-count="5" data-date="2014-01-13"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#1e6823" data-count="128" data-date="2014-01-14"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#eeeeee" data-count="0" data-date="2014-01-15"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#eeeeee" data-count="0" data-date="2014-01-16"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#1e6823" data-count="128" data-date="2014-01-17"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#d6e685" data-count="14" data-date="2014-01-18"/>
+              </g>
+              <g transform="translate(130, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#1e6823" data-count="128" data-date="2014-01-19"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#d6e685" data-count="36" data-date="2014-01-20"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#d6e685" data-count="26" data-date="2014-01-21"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#8cc665" data-count="52" data-date="2014-01-22"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#d6e685" data-count="35" data-date="2014-01-23"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#1e6823" data-count="128" data-date="2014-01-24"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#eeeeee" data-count="0" data-date="2014-01-25"/>
+              </g>
+              <g transform="translate(143, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#44a340" data-count="99" data-date="2014-01-26"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#8cc665" data-count="41" data-date="2014-01-27"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#d6e685" data-count="35" data-date="2014-01-28"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#8cc665" data-count="57" data-date="2014-01-29"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#d6e685" data-count="22" data-date="2014-01-30"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#8cc665" data-count="57" data-date="2014-01-31"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#d6e685" data-count="1" data-date="2014-02-01"/>
+              </g>
+              <g transform="translate(156, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#d6e685" data-count="20" data-date="2014-02-02"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#d6e685" data-count="6" data-date="2014-02-03"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#d6e685" data-count="26" data-date="2014-02-04"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#d6e685" data-count="27" data-date="2014-02-05"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#d6e685" data-count="3" data-date="2014-02-06"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#d6e685" data-count="14" data-date="2014-02-07"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#8cc665" data-count="39" data-date="2014-02-08"/>
+              </g>
+              <g transform="translate(169, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#1e6823" data-count="128" data-date="2014-02-09"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#1e6823" data-count="128" data-date="2014-02-10"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#1e6823" data-count="128" data-date="2014-02-11"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#1e6823" data-count="128" data-date="2014-02-12"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#1e6823" data-count="128" data-date="2014-02-13"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#1e6823" data-count="128" data-date="2014-02-14"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#44a340" data-count="78" data-date="2014-02-15"/>
+              </g>
+              <g transform="translate(182, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#d6e685" data-count="35" data-date="2014-02-16"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#1e6823" data-count="128" data-date="2014-02-17"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#d6e685" data-count="23" data-date="2014-02-18"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#d6e685" data-count="1" data-date="2014-02-19"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#d6e685" data-count="9" data-date="2014-02-20"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#8cc665" data-count="43" data-date="2014-02-21"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#eeeeee" data-count="0" data-date="2014-02-22"/>
+              </g>
+              <g transform="translate(195, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#d6e685" data-count="12" data-date="2014-02-23"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#eeeeee" data-count="0" data-date="2014-02-24"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#1e6823" data-count="128" data-date="2014-02-25"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#eeeeee" data-count="0" data-date="2014-02-26"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#eeeeee" data-count="0" data-date="2014-02-27"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#d6e685" data-count="7" data-date="2014-02-28"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#eeeeee" data-count="0" data-date="2014-03-01"/>
+              </g>
+              <g transform="translate(208, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#eeeeee" data-count="0" data-date="2014-03-02"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#d6e685" data-count="1" data-date="2014-03-03"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#1e6823" data-count="128" data-date="2014-03-04"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#d6e685" data-count="7" data-date="2014-03-05"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#eeeeee" data-count="0" data-date="2014-03-06"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#eeeeee" data-count="0" data-date="2014-03-07"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#eeeeee" data-count="0" data-date="2014-03-08"/>
+              </g>
+              <g transform="translate(221, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#eeeeee" data-count="0" data-date="2014-03-09"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#1e6823" data-count="128" data-date="2014-03-10"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#eeeeee" data-count="0" data-date="2014-03-11"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#d6e685" data-count="10" data-date="2014-03-12"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#d6e685" data-count="9" data-date="2014-03-13"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#d6e685" data-count="8" data-date="2014-03-14"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#eeeeee" data-count="0" data-date="2014-03-15"/>
+              </g>
+              <g transform="translate(234, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#1e6823" data-count="128" data-date="2014-03-16"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#1e6823" data-count="128" data-date="2014-03-17"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#1e6823" data-count="128" data-date="2014-03-18"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#1e6823" data-count="128" data-date="2014-03-19"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#1e6823" data-count="128" data-date="2014-03-20"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#1e6823" data-count="128" data-date="2014-03-21"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#eeeeee" data-count="0" data-date="2014-03-22"/>
+              </g>
+              <g transform="translate(247, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#eeeeee" data-count="0" data-date="2014-03-23"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#d6e685" data-count="1" data-date="2014-03-24"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#d6e685" data-count="17" data-date="2014-03-25"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#d6e685" data-count="3" data-date="2014-03-26"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#eeeeee" data-count="0" data-date="2014-03-27"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#eeeeee" data-count="0" data-date="2014-03-28"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#eeeeee" data-count="0" data-date="2014-03-29"/>
+              </g>
+              <g transform="translate(260, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#d6e685" data-count="1" data-date="2014-03-30"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#d6e685" data-count="4" data-date="2014-03-31"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#d6e685" data-count="11" data-date="2014-04-01"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#d6e685" data-count="2" data-date="2014-04-02"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#d6e685" data-count="4" data-date="2014-04-03"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#d6e685" data-count="2" data-date="2014-04-04"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#eeeeee" data-count="0" data-date="2014-04-05"/>
+              </g>
+              <g transform="translate(273, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#1e6823" data-count="128" data-date="2014-04-06"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#1e6823" data-count="128" data-date="2014-04-07"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#1e6823" data-count="128" data-date="2014-04-08"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#1e6823" data-count="128" data-date="2014-04-09"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#1e6823" data-count="128" data-date="2014-04-10"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#1e6823" data-count="128" data-date="2014-04-11"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#eeeeee" data-count="0" data-date="2014-04-12"/>
+              </g>
+              <g transform="translate(286, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#1e6823" data-count="128" data-date="2014-04-13"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#d6e685" data-count="6" data-date="2014-04-14"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#1e6823" data-count="128" data-date="2014-04-15"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#d6e685" data-count="5" data-date="2014-04-16"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#d6e685" data-count="2" data-date="2014-04-17"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#eeeeee" data-count="0" data-date="2014-04-18"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#eeeeee" data-count="0" data-date="2014-04-19"/>
+              </g>
+              <g transform="translate(299, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#1e6823" data-count="128" data-date="2014-04-20"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#eeeeee" data-count="0" data-date="2014-04-21"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#1e6823" data-count="128" data-date="2014-04-22"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#eeeeee" data-count="0" data-date="2014-04-23"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#eeeeee" data-count="0" data-date="2014-04-24"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#eeeeee" data-count="0" data-date="2014-04-25"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#eeeeee" data-count="0" data-date="2014-04-26"/>
+              </g>
+              <g transform="translate(312, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#1e6823" data-count="128" data-date="2014-04-27"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#eeeeee" data-count="0" data-date="2014-04-28"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#1e6823" data-count="128" data-date="2014-04-29"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#eeeeee" data-count="0" data-date="2014-04-30"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#eeeeee" data-count="0" data-date="2014-05-01"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#eeeeee" data-count="0" data-date="2014-05-02"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#eeeeee" data-count="0" data-date="2014-05-03"/>
+              </g>
+              <g transform="translate(325, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#1e6823" data-count="128" data-date="2014-05-04"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#eeeeee" data-count="0" data-date="2014-05-05"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#1e6823" data-count="128" data-date="2014-05-06"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#d6e685" data-count="15" data-date="2014-05-07"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#d6e685" data-count="1" data-date="2014-05-08"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#d6e685" data-count="14" data-date="2014-05-09"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#eeeeee" data-count="0" data-date="2014-05-10"/>
+              </g>
+              <g transform="translate(338, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#1e6823" data-count="128" data-date="2014-05-11"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#d6e685" data-count="10" data-date="2014-05-12"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#d6e685" data-count="18" data-date="2014-05-13"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#d6e685" data-count="14" data-date="2014-05-14"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#d6e685" data-count="14" data-date="2014-05-15"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#d6e685" data-count="8" data-date="2014-05-16"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#eeeeee" data-count="0" data-date="2014-05-17"/>
+              </g>
+              <g transform="translate(351, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#eeeeee" data-count="0" data-date="2014-05-18"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#eeeeee" data-count="0" data-date="2014-05-19"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#d6e685" data-count="4" data-date="2014-05-20"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#eeeeee" data-count="0" data-date="2014-05-21"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#8cc665" data-count="41" data-date="2014-05-22"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#d6e685" data-count="14" data-date="2014-05-23"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#eeeeee" data-count="0" data-date="2014-05-24"/>
+              </g>
+              <g transform="translate(364, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#eeeeee" data-count="0" data-date="2014-05-25"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#eeeeee" data-count="0" data-date="2014-05-26"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#d6e685" data-count="7" data-date="2014-05-27"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#d6e685" data-count="25" data-date="2014-05-28"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#d6e685" data-count="19" data-date="2014-05-29"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#d6e685" data-count="20" data-date="2014-05-30"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#eeeeee" data-count="0" data-date="2014-05-31"/>
+              </g>
+              <g transform="translate(377, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#eeeeee" data-count="0" data-date="2014-06-01"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#d6e685" data-count="2" data-date="2014-06-02"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#d6e685" data-count="3" data-date="2014-06-03"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#d6e685" data-count="10" data-date="2014-06-04"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#d6e685" data-count="1" data-date="2014-06-05"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#d6e685" data-count="10" data-date="2014-06-06"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#eeeeee" data-count="0" data-date="2014-06-07"/>
+              </g>
+              <g transform="translate(390, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#d6e685" data-count="1" data-date="2014-06-08"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#d6e685" data-count="3" data-date="2014-06-09"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#d6e685" data-count="7" data-date="2014-06-10"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#d6e685" data-count="6" data-date="2014-06-11"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#eeeeee" data-count="0" data-date="2014-06-12"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#eeeeee" data-count="0" data-date="2014-06-13"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#eeeeee" data-count="0" data-date="2014-06-14"/>
+              </g>
+              <g transform="translate(403, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#eeeeee" data-count="0" data-date="2014-06-15"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#d6e685" data-count="3" data-date="2014-06-16"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#d6e685" data-count="1" data-date="2014-06-17"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#eeeeee" data-count="0" data-date="2014-06-18"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#d6e685" data-count="1" data-date="2014-06-19"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#d6e685" data-count="8" data-date="2014-06-20"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#eeeeee" data-count="0" data-date="2014-06-21"/>
+              </g>
+              <g transform="translate(416, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#d6e685" data-count="1" data-date="2014-06-22"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#d6e685" data-count="9" data-date="2014-06-23"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#d6e685" data-count="20" data-date="2014-06-24"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#d6e685" data-count="7" data-date="2014-06-25"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#d6e685" data-count="2" data-date="2014-06-26"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#d6e685" data-count="2" data-date="2014-06-27"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#eeeeee" data-count="0" data-date="2014-06-28"/>
+              </g>
+              <g transform="translate(429, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#eeeeee" data-count="0" data-date="2014-06-29"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#d6e685" data-count="2" data-date="2014-06-30"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#d6e685" data-count="1" data-date="2014-07-01"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#d6e685" data-count="1" data-date="2014-07-02"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#d6e685" data-count="3" data-date="2014-07-03"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#d6e685" data-count="12" data-date="2014-07-04"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#eeeeee" data-count="0" data-date="2014-07-05"/>
+              </g>
+              <g transform="translate(442, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#d6e685" data-count="1" data-date="2014-07-06"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#eeeeee" data-count="0" data-date="2014-07-07"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#d6e685" data-count="5" data-date="2014-07-08"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#d6e685" data-count="3" data-date="2014-07-09"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#d6e685" data-count="7" data-date="2014-07-10"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#eeeeee" data-count="0" data-date="2014-07-11"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#eeeeee" data-count="0" data-date="2014-07-12"/>
+              </g>
+              <g transform="translate(455, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#eeeeee" data-count="0" data-date="2014-07-13"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#d6e685" data-count="10" data-date="2014-07-14"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#d6e685" data-count="5" data-date="2014-07-15"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#d6e685" data-count="2" data-date="2014-07-16"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#d6e685" data-count="4" data-date="2014-07-17"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#d6e685" data-count="5" data-date="2014-07-18"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#eeeeee" data-count="0" data-date="2014-07-19"/>
+              </g>
+              <g transform="translate(468, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#eeeeee" data-count="0" data-date="2014-07-20"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#d6e685" data-count="14" data-date="2014-07-21"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#d6e685" data-count="14" data-date="2014-07-22"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#d6e685" data-count="1" data-date="2014-07-23"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#d6e685" data-count="21" data-date="2014-07-24"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#eeeeee" data-count="0" data-date="2014-07-25"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#eeeeee" data-count="0" data-date="2014-07-26"/>
+              </g>
+              <g transform="translate(481, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#eeeeee" data-count="0" data-date="2014-07-27"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#eeeeee" data-count="0" data-date="2014-07-28"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#eeeeee" data-count="0" data-date="2014-07-29"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#d6e685" data-count="5" data-date="2014-07-30"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#d6e685" data-count="29" data-date="2014-07-31"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#d6e685" data-count="29" data-date="2014-08-01"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#eeeeee" data-count="0" data-date="2014-08-02"/>
+              </g>
+              <g transform="translate(494, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#d6e685" data-count="1" data-date="2014-08-03"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#d6e685" data-count="12" data-date="2014-08-04"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#d6e685" data-count="2" data-date="2014-08-05"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#d6e685" data-count="1" data-date="2014-08-06"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#d6e685" data-count="14" data-date="2014-08-07"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#eeeeee" data-count="0" data-date="2014-08-08"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#eeeeee" data-count="0" data-date="2014-08-09"/>
+              </g>
+              <g transform="translate(507, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#eeeeee" data-count="0" data-date="2014-08-10"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#d6e685" data-count="5" data-date="2014-08-11"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#d6e685" data-count="7" data-date="2014-08-12"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#d6e685" data-count="4" data-date="2014-08-13"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#eeeeee" data-count="0" data-date="2014-08-14"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#eeeeee" data-count="0" data-date="2014-08-15"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#eeeeee" data-count="0" data-date="2014-08-16"/>
+              </g>
+              <g transform="translate(520, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#d6e685" data-count="1" data-date="2014-08-17"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#d6e685" data-count="3" data-date="2014-08-18"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#eeeeee" data-count="0" data-date="2014-08-19"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#d6e685" data-count="3" data-date="2014-08-20"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#d6e685" data-count="2" data-date="2014-08-21"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#eeeeee" data-count="0" data-date="2014-08-22"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#eeeeee" data-count="0" data-date="2014-08-23"/>
+              </g>
+              <g transform="translate(533, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#eeeeee" data-count="0" data-date="2014-08-24"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#eeeeee" data-count="0" data-date="2014-08-25"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#d6e685" data-count="4" data-date="2014-08-26"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#d6e685" data-count="13" data-date="2014-08-27"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#eeeeee" data-count="0" data-date="2014-08-28"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#eeeeee" data-count="0" data-date="2014-08-29"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#d6e685" data-count="6" data-date="2014-08-30"/>
+              </g>
+              <g transform="translate(546, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#eeeeee" data-count="0" data-date="2014-08-31"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#eeeeee" data-count="0" data-date="2014-09-01"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#d6e685" data-count="4" data-date="2014-09-02"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#eeeeee" data-count="0" data-date="2014-09-03"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#d6e685" data-count="1" data-date="2014-09-04"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#d6e685" data-count="3" data-date="2014-09-05"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#eeeeee" data-count="0" data-date="2014-09-06"/>
+              </g>
+              <g transform="translate(559, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#eeeeee" data-count="0" data-date="2014-09-07"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#d6e685" data-count="3" data-date="2014-09-08"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#d6e685" data-count="2" data-date="2014-09-09"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#d6e685" data-count="6" data-date="2014-09-10"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#d6e685" data-count="4" data-date="2014-09-11"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#d6e685" data-count="3" data-date="2014-09-12"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#eeeeee" data-count="0" data-date="2014-09-13"/>
+              </g>
+              <g transform="translate(572, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#eeeeee" data-count="0" data-date="2014-09-14"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#eeeeee" data-count="0" data-date="2014-09-15"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#eeeeee" data-count="0" data-date="2014-09-16"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#eeeeee" data-count="0" data-date="2014-09-17"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#eeeeee" data-count="0" data-date="2014-09-18"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#eeeeee" data-count="0" data-date="2014-09-19"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#eeeeee" data-count="0" data-date="2014-09-20"/>
+              </g>
+              <g transform="translate(585, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#eeeeee" data-count="0" data-date="2014-09-21"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#d6e685" data-count="2" data-date="2014-09-22"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#eeeeee" data-count="0" data-date="2014-09-23"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#d6e685" data-count="1" data-date="2014-09-24"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#d6e685" data-count="1" data-date="2014-09-25"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#d6e685" data-count="5" data-date="2014-09-26"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#eeeeee" data-count="0" data-date="2014-09-27"/>
+              </g>
+              <g transform="translate(598, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#eeeeee" data-count="0" data-date="2014-09-28"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#d6e685" data-count="6" data-date="2014-09-29"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#d6e685" data-count="1" data-date="2014-09-30"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#eeeeee" data-count="0" data-date="2014-10-01"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#d6e685" data-count="1" data-date="2014-10-02"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#d6e685" data-count="21" data-date="2014-10-03"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#d6e685" data-count="4" data-date="2014-10-04"/>
+              </g>
+              <g transform="translate(611, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#d6e685" data-count="1" data-date="2014-10-05"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#d6e685" data-count="10" data-date="2014-10-06"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#d6e685" data-count="4" data-date="2014-10-07"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#d6e685" data-count="9" data-date="2014-10-08"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#d6e685" data-count="3" data-date="2014-10-09"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#d6e685" data-count="2" data-date="2014-10-10"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#eeeeee" data-count="0" data-date="2014-10-11"/>
+              </g>
+              <g transform="translate(624, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#eeeeee" data-count="0" data-date="2014-10-12"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#d6e685" data-count="3" data-date="2014-10-13"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#d6e685" data-count="24" data-date="2014-10-14"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#d6e685" data-count="23" data-date="2014-10-15"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#8cc665" data-count="46" data-date="2014-10-16"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#d6e685" data-count="20" data-date="2014-10-17"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#d6e685" data-count="1" data-date="2014-10-18"/>
+              </g>
+              <g transform="translate(637, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#d6e685" data-count="7" data-date="2014-10-19"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#d6e685" data-count="5" data-date="2014-10-20"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#d6e685" data-count="17" data-date="2014-10-21"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#d6e685" data-count="10" data-date="2014-10-22"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#d6e685" data-count="22" data-date="2014-10-23"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#d6e685" data-count="4" data-date="2014-10-24"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#d6e685" data-count="17" data-date="2014-10-25"/>
+              </g>
+              <g transform="translate(650, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#8cc665" data-count="55" data-date="2014-10-26"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#8cc665" data-count="42" data-date="2014-10-27"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#d6e685" data-count="26" data-date="2014-10-28"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#d6e685" data-count="21" data-date="2014-10-29"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#d6e685" data-count="13" data-date="2014-10-30"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#d6e685" data-count="21" data-date="2014-10-31"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#eeeeee" data-count="0" data-date="2014-11-01"/>
+              </g>
+              <g transform="translate(663, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#d6e685" data-count="6" data-date="2014-11-02"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#d6e685" data-count="16" data-date="2014-11-03"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#eeeeee" data-count="0" data-date="2014-11-04"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#d6e685" data-count="10" data-date="2014-11-05"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#d6e685" data-count="7" data-date="2014-11-06"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#d6e685" data-count="5" data-date="2014-11-07"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#d6e685" data-count="4" data-date="2014-11-08"/>
+              </g>
+              <g transform="translate(676, 0)">
+                  <rect class="day" width="11" height="11" y="0" fill="#d6e685" data-count="12" data-date="2014-11-09"/>
+                  <rect class="day" width="11" height="11" y="13" fill="#d6e685" data-count="17" data-date="2014-11-10"/>
+                  <rect class="day" width="11" height="11" y="26" fill="#d6e685" data-count="33" data-date="2014-11-11"/>
+                  <rect class="day" width="11" height="11" y="39" fill="#d6e685" data-count="25" data-date="2014-11-12"/>
+                  <rect class="day" width="11" height="11" y="52" fill="#d6e685" data-count="11" data-date="2014-11-13"/>
+                  <rect class="day" width="11" height="11" y="65" fill="#d6e685" data-count="10" data-date="2014-11-14"/>
+                  <rect class="day" width="11" height="11" y="78" fill="#d6e685" data-count="11" data-date="2014-11-15"/>
+              </g>
+              <text x="0" y="-5" class="month">Nov</text>
+              <text x="39" y="-5" class="month">Dec</text>
+              <text x="104" y="-5" class="month">Jan</text>
+              <text x="156" y="-5" class="month">Feb</text>
+              <text x="208" y="-5" class="month">Mar</text>
+              <text x="273" y="-5" class="month">Apr</text>
+              <text x="325" y="-5" class="month">May</text>
+              <text x="377" y="-5" class="month">Jun</text>
+              <text x="442" y="-5" class="month">Jul</text>
+              <text x="494" y="-5" class="month">Aug</text>
+              <text x="559" y="-5" class="month">Sep</text>
+              <text x="611" y="-5" class="month">Oct</text>
+            <text text-anchor="middle" class="wday" dx="-10" dy="9" style="display: none;">S</text>
+            <text text-anchor="middle" class="wday" dx="-10" dy="22">M</text>
+            <text text-anchor="middle" class="wday" dx="-10" dy="35" style="display: none;">T</text>
+            <text text-anchor="middle" class="wday" dx="-10" dy="48">W</text>
+            <text text-anchor="middle" class="wday" dx="-10" dy="61" style="display: none;">T</text>
+            <text text-anchor="middle" class="wday" dx="-10" dy="74">F</text>
+            <text text-anchor="middle" class="wday" dx="-10" dy="87" style="display: none;">S</text>
+          </g>
+        </svg>
+    http_version: 
+  recorded_at: Sat, 07 Dec 2013 00:00:00 GMT
+recorded_with: VCR 2.9.3
