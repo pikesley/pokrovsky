@@ -1,8 +1,5 @@
 source 'https://rubygems.org'
 
-ruby '2.1.5'
-#ruby-gemset=pokrovsky
-
 gem 'sinatra'
 gem 'thin'
 gem 'rake'
