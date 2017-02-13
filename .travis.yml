@@ -4,6 +4,8 @@ rvm:
 - 2.4.0
 deploy:
   provider: heroku
-  app: pokrovsky
   api_key:
-    secure: "UyYdGrzj+3m/u5F20GCyfPFMJhAVq7v4FXJTYq4VLxGF7/13QpS76Ep9DBLZJb/GlRyfaRzi7IEr0pORItAYXTlg5yWBSOzyAmApT1G52JyevDtC0xeVdO5uAzZEgxfmgAIfFJLNSVVjMb8DwECG+noYoUO8AG0zBYFdpjNFslY="
+    secure: OmM/3ZQ5KMEVZFbEzmB4X6RxcQcgNIS70L/s8kap/B0gi6M7Pjm1ty7393EBWm66k9Lw+J82UxDLnVb1tCf4QVFsQc+l7sFGLw11p8UJZXBIgziqXq+v/xTIxocjRA+PvSdIkV3PjBeZ0LKsYW7b+D+YawGO8TGvjUEjnq4KKY0=
+  app: pokrovsky
+  on:
+    repo: pikesley/pokrovsky
