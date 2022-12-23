@@ -2,8 +2,6 @@
 
 _Github History Vandalism as a Service_
 
-## Introduction
-
 The unbroken chain of pointless Things-as-a-Service continues. This one uses my [Uncle Clive](//github.com/pikesley/uncle-clive) tool (via my [Dead Cockroach](//github.com/pikesley/dead-cockroach) tool) to generate a script suitable for vandalising your Git commit history ([my account](//github.com/pikesley) is probably displaying an example right now).
 
 ### API
