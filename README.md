@@ -29,7 +29,7 @@ do
 done
 ```
 
-Then get the `docker-compose` files:
+Then create the `docker-compose` files:
 
 ```
 cat <<EOF > docker-compose.yaml
