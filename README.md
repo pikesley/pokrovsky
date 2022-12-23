@@ -85,13 +85,13 @@ docker compose up
 To actually vandalise your GH commit graph, from a different terminal,
 
 ```
-export DISPOSABLEREPO=dummy
-export GRAFFITI=`echo "© 1982" | sed "s: :%20:g"`
-export  GITHUBUSER=yourghuser
-curl "http://localhost:8080/${GITHUBUSER}/${DISPOSABLEREPO}/${GRAFFITI}" | bash
+export REPO=dummy
+export TEXT=`echo "© 1982" | sed "s: :%20:g"`
+export GHUSER=yourghuser
+curl "http://localhost:8080/${GHUSER}/${REPO}/${TEXT}" | bash
 ```
 
-(Note: there's some latency before the commits actually appear in you graph, be patient)
+(Note: there's some latency before the commits actually appear in your graph, be patient)
 
 ### Notes
 
