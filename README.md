@@ -12,7 +12,7 @@ Will return a bash script which, when run locally, will:
 
 * initialise a local git repo named _:repo_
 * create a series of empty commits
-* push the repo to **git@github.com:_:githublogin/:repo_.git**
+* push the repo to `git@github.com:you/repo.git`
 
 The commits will be structured such that they will 'write' the **first six characters** of _:text_ on the Github commit calendar using the 1982 Sinclair Spectrum character set. There is a limitation in that the Spectrum font is 8 units high, and the Github calendar has a height of 7 (see [dead-cockroach](//github.com/pikesley/dead-cockroach/blob/master/README.md) for an explanation of how this is handled).
 
