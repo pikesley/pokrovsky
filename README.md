@@ -32,8 +32,45 @@ done
 Then get the `docker-compose` files:
 
 ```
-curl https://gist.githubusercontent.com/pikesley/012bb61d88cf1668dbcc85f8818c0849/raw/6f21fbe98b3f1f111fc4b08de757e644d1477f2a/docker-compose.yml -o docker-compose.yml
-curl https://gist.githubusercontent.com/pikesley/012bb61d88cf1668dbcc85f8818c0849/raw/6f21fbe98b3f1f111fc4b08de757e644d1477f2a/.env -o .env
+cat <<EOF > docker-compose.yaml
+version: "3.9"
+
+services:
+  uncle-clive:
+    build: uncle-clive
+    image: pikesley/uncle-clive
+    ports:
+      - ${CLIVE_PORT}:${CLIVE_PORT}
+    working_dir: /opt/uncle-clive
+    command: bundle exec rackup -p ${CLIVE_PORT} -o 0.0.0.0
+
+  dead-cockroach:
+    build: dead-cockroach
+    image: pikesley/dead-cockroach
+    ports:
+      - ${COCKROACH_PORT}:${COCKROACH_PORT}
+    working_dir: /opt/dead-cockroach
+    environment:
+      CLIVE_PORT: ${CLIVE_PORT}
+    command: bundle exec rackup -p ${COCKROACH_PORT} -o 0.0.0.0
+
+  pokrovsky:
+    build: pokrovsky
+    image: pikesley/pokrovsky
+    ports:
+      - ${POKROVSKY_PORT}:${POKROVSKY_PORT}
+    working_dir: /opt/pokrovsky
+    environment:
+      POKROVSKY_PORT: ${POKROVSKY_PORT}
+      COCKROACH_PORT: ${COCKROACH_PORT}
+    command: bundle exec ruby lib/pokrovsky.rb
+EOF
+
+cat  <<EOF > .env
+CLIVE_PORT=6060
+COCKROACH_PORT=7070
+POKROVSKY_PORT=8080
+EOF
 ```
 
 And build and run it:
