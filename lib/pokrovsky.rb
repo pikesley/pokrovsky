@@ -10,7 +10,8 @@ require 'curb'
 require 'nokogiri'
 
 class PokrovskyService < Sinatra::Base
-  use Rack::GoogleAnalytics, :tracker => 'UA-20895204-12'
+  set :port, ENV["POKROVSKY_PORT"]
+  set :bind, "0.0.0.0"
 
   @@locals = {
 #      :bootstrap_theme => '../lavish-bootstrap.css',
@@ -30,7 +31,9 @@ class PokrovskyService < Sinatra::Base
   end
 
   get '/:user/:repo/:text' do
-    ssfaas    = 'http://dead-cockroach.herokuapp.com/'
+    ssfaas    = 'http://dead-cockroach:%s' % [
+      ENV["COCKROACH_PORT"]
+    ]
     text      = '/%s' % [
         URI.encode(params[:text][0...6])
     ]
