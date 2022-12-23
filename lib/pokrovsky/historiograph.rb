@@ -109,8 +109,7 @@ git add README.md
       end
 
       s << "" "git remote add origin git@github.com:%s/%s.git
-git pull
-git push -u origin master
+git push --set-upstream origin main
 " "" % [
           @user,
           @repo
