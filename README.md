@@ -6,13 +6,13 @@ The unbroken chain of pointless Things-as-a-Service continues. This one uses my 
 
 ### API
 
-#### `/:githublogin/:repo/:text`
+#### `/:user/:repo/:text`
 
 Will return a bash script which, when run locally, will:
 
-* initialise a local git repo named _:repo_
+* initialise a local git repo named `:repo`
 * create a series of empty commits
-* push the repo to `git@github.com:you/repo.git`
+* push the repo to `git@github.com:user/repo.git`
 
 The commits will be structured such that they will 'write' the **first six characters** of _:text_ on the Github commit calendar using the 1982 Sinclair Spectrum character set. There is a limitation in that the Spectrum font is 8 units high, and the Github calendar has a height of 7 (see [dead-cockroach](//github.com/pikesley/dead-cockroach/blob/master/README.md) for an explanation of how this is handled).
 
@@ -97,7 +97,7 @@ curl "${SERVER}/${GHUSER}/${REPO}/${TEXT}" | bash
 ### Notes
 
 * This is *ancient* Ruby and I have no interest in updating it. Many of the tests are now busted and I really don't care.
-* You should start with a fresh repo each time, both locally and on Github. The script makes no attempt to create a new Github repo, and it certainly doesn't try to delete anything from there. If you can't work out how to do this safely, you probably shouldn't use this service.
+* You should start with a fresh repo each time, both locally and on Github. The script makes no attempt to create a new Github repo, and it certainly doesn't try to delete anything from there. If you can't work out how to do this safely, you probably shouldn't use these tools.
 * If you decide this isn't for you after all, just delete the repo and it will all go away.
 * This owes a _massive_ debt to [Gelstudios'](//github.com/gelstudios) splendid [Gitfiti](//github.com/gelstudios/gitfiti).
 * I gave a talk about this at [EMF Camp 2014](//sam.pikesley.org/talks/#vandalising-your-github-commit-history-emf-2014).
